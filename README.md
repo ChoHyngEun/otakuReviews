@@ -4,6 +4,7 @@
 <br>
 포트폴리오 개발노트 2023 3월<br>
 개발인원 3명<br>
+팀명: **손하연 _The Queen_**<br>
 JSP, JSTL, MVC, SERVLET, ECLIPSE, MYSQL...<br>
 portfolio[jsp_data main]<br>
 com.portfolio.registration.<br>
