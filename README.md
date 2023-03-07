@@ -6,7 +6,6 @@
 팀명: **손하연 _The Queen_**<br>
 목표: <br>
 <br>
-<br>
 JSP, JSTL, MVC, SERVLET, ECLIPSE, MYSQL...<br>
 portfolio[jsp_data main]<br>
 com.portfolio.registration.<br>
