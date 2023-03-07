@@ -1,5 +1,4 @@
 **OtakuReviews**
-
 *<sub>this is where you will shine, mr.otaku.</sub>*
 
 ==========================================================
