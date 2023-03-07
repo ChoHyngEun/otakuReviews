@@ -1,5 +1,5 @@
-# otakuReviews
-this is where you will shine, mr.otaku.
+**<sup>otakuReviews</sup>**
+*<sub>this is where you will shine, mr.otaku.</sub>*
 
 ==========================================================
 
@@ -15,10 +15,10 @@ com.portfolio.registration.
 
 0. 라이브러리: (webapp - WEB-INF - lib)
 --03.07
-//added jsp api 2.2
-//added jstl 1.2
-//added mysql connector
-//added servlet api
+//added jsp api 2.2<br>
+//added jstl 1.2<br>
+//added mysql connector<br>
+//added servlet api<br>
 
 ===========================================================
 
