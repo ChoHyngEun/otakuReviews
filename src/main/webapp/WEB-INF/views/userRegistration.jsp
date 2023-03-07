@@ -16,6 +16,7 @@
 		Password: <input type="password" name="password"><br>
 		Address: <input type="text" name="address"><br>
 		Email: <input type="text" name="email"><br>
+		Phone: <input type="text" name="phone"><br>
 		<input type="submit" value="SUBMIT">
 	</form>
 </body>

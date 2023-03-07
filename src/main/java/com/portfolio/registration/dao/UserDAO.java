@@ -12,8 +12,8 @@ public class UserDAO {
 	//passing user object
 	public int registerUser(User user) throws ClassNotFoundException{
 		//테이블에 유저 등록 SQL statement 추가. id 는 제외 (auto_increment 사용)
-		String insert_user = "insert into user" + "(first_name, last_name, username, password, address, email) values "
-		+ "(?,?,?,?,?,?);";
+		String insert_user = "insert into user" + "(first_name, last_name, username, password, address, email, phone) values "
+		+ "(?,?,?,?,?,?,?);";
 	
 		int result;
 		result = 0;
@@ -34,6 +34,7 @@ public class UserDAO {
 					preparedStatement.setString(4, user.getPassword());
 					preparedStatement.setString(5, user.getAddress());
 					preparedStatement.setString(6, user.getEmail());
+					preparedStatement.setString(7, user.getPhone());
 					
 					System.out.println(preparedStatement);
 					//query execute
