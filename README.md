@@ -1,4 +1,5 @@
 **OtakuReviews**
+
 *<sub>this is where you will shine, mr.otaku.</sub>*
 
 ==========================================================
@@ -8,8 +9,8 @@
 JSP, JSTL, MVC, SERVLET, ECLIPSE, MYSQL...
 portfolio[jsp_data main]
 com.portfolio.registration.
-//used com.mysql.cj.jdbc.Driver, not com.mysql.jdbc.Driver (depends on connector version)
-//portfolio - build path - class module
+//used com.mysql.cj.jdbc.Driver, not com.mysql.jdbc.Driver (depends on connector version)<br>
+//portfolio - build path - class module<br>
 
 ===========================================================
 
@@ -24,17 +25,17 @@ com.portfolio.registration.
 
 1. MVC (Model-View-Controller) 패턴
 --03.07
-<MVC와 user 등록 시스템 구축>
-//added model, dao, controller packages
-//added User.java (JavaBean)
-//added UserDAO.java (DAO)
-//added UserServlet.java (Servlet)
-//added userRegistration.jsp under views
-//added userInfo.jsp under views
+<MVC와 user 등록 시스템 구축><br>
+//added model, dao, controller packages<br>
+//added User.java (JavaBean)<br>
+//added UserDAO.java (DAO)<br>
+//added UserServlet.java (Servlet)<br>
+//added userRegistration.jsp under views<br>
+//added userInfo.jsp under views<br>
 
-<MVC와 user 로그인&검증 시스템 구축>
-//added UserLogin.java (JavaBean)
-//added LoginDAO.java (DAO)
+<MVC와 user 로그인&검증 시스템 구축><br>
+//added UserLogin.java (JavaBean)<br>
+//added LoginDAO.java (DAO)<br>
 
 
 ===========================================================
