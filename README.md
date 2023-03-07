@@ -2,11 +2,10 @@
 <br>
 ==========================================================<br>
 <br>
-<div style="text-align:center">
 포트폴리오 개발노트 2023 3월<br>
 팀명: **손하연 _The Queen_**<br>
 목표: <br>
-</div>
+<br>
 <br>
 JSP, JSTL, MVC, SERVLET, ECLIPSE, MYSQL...<br>
 portfolio[jsp_data main]<br>
