@@ -1,30 +1,28 @@
-**OtakuReviews**
-
-*<sub>this is where you will shine, mr.otaku.</sub>*
-
-==========================================================
-
-포트폴리오 개발노트 2023 3월
-개발인원 3명
-JSP, JSTL, MVC, SERVLET, ECLIPSE, MYSQL...
-portfolio[jsp_data main]
-com.portfolio.registration.
+**OtakuReviews**<br>*<sub>this is where you will shine, mr.otaku.</sub>*<br>
+<br>
+==========================================================<br>
+<br>
+포트폴리오 개발노트 2023 3월<br>
+개발인원 3명<br>
+JSP, JSTL, MVC, SERVLET, ECLIPSE, MYSQL...<br>
+portfolio[jsp_data main]<br>
+com.portfolio.registration.<br>
 //used com.mysql.cj.jdbc.Driver, not com.mysql.jdbc.Driver (depends on connector version)<br>
 //portfolio - build path - class module<br>
-
-===========================================================
-
-0. 라이브러리: (webapp - WEB-INF - lib)
---03.07
+<br>
+===========================================================<br>
+<br>
+0. 라이브러리: (webapp - WEB-INF - lib)<br>
+--03.07<br>
 //added jsp api 2.2<br>
 //added jstl 1.2<br>
 //added mysql connector<br>
 //added servlet api<br>
-
-===========================================================
-
-1. MVC (Model-View-Controller) 패턴
---03.07
+<br>
+===========================================================<br>
+<br>
+1. MVC (Model-View-Controller) 패턴<br>
+--03.07<br>
 <MVC와 user 등록 시스템 구축><br>
 //added model, dao, controller packages<br>
 //added User.java (JavaBean)<br>
@@ -32,24 +30,25 @@ com.portfolio.registration.
 //added UserServlet.java (Servlet)<br>
 //added userRegistration.jsp under views<br>
 //added userInfo.jsp under views<br>
-
+<br>
 <MVC와 user 로그인&검증 시스템 구축><br>
 //added UserLogin.java (JavaBean)<br>
 //added LoginDAO.java (DAO)<br>
-
-
-===========================================================
-
-2. MySQL
-(query file name: forPortfolio)
---03.07
-<user 등록 sql>
-//added user table (id: auto_increment)
-//added phone to user table
-
-<user 로그인 sql>
-//added login table
-
-===========================================================
-
-3. 기타
+<br>
+<br>
+===========================================================<br>
+<br>
+2. MySQL<br>
+(query file name: forPortfolio)<br>
+--03.07<br>
+<user 등록 sql><br>
+//added user table (id: auto_increment)<br>
+//added phone to user table<br>
+<br>
+<user 로그인 sql><br>
+//added login table<br>
+<br>
+===========================================================<br>
+<br>
+3. 기타<br>
+<br>
