@@ -1,26 +1,37 @@
 <div align=center>
+  
 <br>
+  <div>
 🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸
+  </div>
 <br>
+  
 **:heart:OtakuReviews:heart:**<br>
 *<sub>this is where you will shine, mr.otaku.:kiss:</sub>*<br>
 <br>
-=======================<br>
+  <div>
+🌸
+  </div>
 <br>
 포트폴리오 개발노트 2023 3월<br>
-팀명: 🌸 **손하연 _The Queen_** :crown:<br>
+  팀명: **손하연**
+  ***The Queen***
+<br>
 개발인원: 3명:family_man_man_girl:<br>
 목표: <br>
-  
 ![](https://media.giphy.com/media/3o7TKDcovELwB2DM64/giphy.gif)
-  
-=======================<br>
+  <br>
+  <div>
+🌸
+  </div>
 <br>
 servlet nav guide<br>
   /register (회원가입 화면)<br>
   /login.jsp (로그인 화면)<br>
 <br>
-=======================<br>
+  <div>
+🌸
+  </div>
 <br>
 JSP, JSTL, MVC, SERVLET, ECLIPSE, MYSQL...<br>
 portfolio[jsp_data main]<br>
@@ -28,7 +39,9 @@ com.portfolio.registration.<br>
 //used com.mysql.cj.jdbc.Driver, not com.mysql.jdbc.Driver (depends on connector version)<br>
 //portfolio - build path - class module<br>
 <br>
-===========================================================<br>
+  <div>
+🌸
+  </div>
 <br>
 0.라이브러리: (webapp - WEB-INF - lib)<br>
   
@@ -38,11 +51,13 @@ com.portfolio.registration.<br>
 //added mysql connector<br>
 //added servlet api<br>
 <br>
-===========================================================<br>
+  <div>
+🌸
+  </div>
 <br>
 1.MVC (Model-View-Controller) 패턴<br>
 <br>
-:rose:<MVC와 user 등록 시스템 구축><br>
+<MVC와 user 등록 시스템 구축><br>
 <br>
 --03.07<br>
 //added model, dao, controller packages<br>
@@ -54,7 +69,7 @@ com.portfolio.registration.<br>
 <br>
 --03.08<br>
 <br>
-:rose:<MVC와 user 로그인&검증 시스템 구축><br>
+<MVC와 user 로그인&검증 시스템 구축><br>
 <br>
 --03.07<br>
 <br>
@@ -68,12 +83,14 @@ com.portfolio.registration.<br>
 //added welcome.jsp<br>
 //added alert feature to LoginServlet.java (in case login validation fails)<br>
 <br>
-===========================================================<br>
+  <div>
+🌸
+  </div>
 <br>
 2.MySQL<br>
 (query file name: forPortfolio)<br>
 <br>
-:rose:<user 등록 sql><br>
+<user 등록 sql><br>
 <br>
 --03.07<br>
 <br>
@@ -81,7 +98,7 @@ com.portfolio.registration.<br>
 //added phone to user table<br>
 //now using user table for both login and registration<br>
 <br>
-:rose:<user 로그인 sql><br>
+<user 로그인 sql><br>
 <br>
 --03.07<br>
 <br>
@@ -91,11 +108,15 @@ com.portfolio.registration.<br>
 <br>
 //deleted login table<br>
 <br>
-===========================================================<br>
+  <div>
+🌸
+  </div>
 <br>
 3. 기타<br>
 <br>
 <br>
+  <div>
 🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸
+  </div>
 <br>
   </div>
