@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Temp Title</title>
+<title>Temp Title (redirects here if successful registration)</title>
 </head>
 <body>
-	<h1>grats!</h1>
+	<h1>user registration successful</h1>
 </body>
 </html>

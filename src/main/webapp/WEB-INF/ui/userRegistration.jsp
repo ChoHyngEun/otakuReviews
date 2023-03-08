@@ -7,9 +7,9 @@
 <title>Temp Title</title>
 </head>
 <body>
-	<h1>Registration Form</h1>
-	<!-- UserServlet URL: /register -->
-	<form action="<%=request.getContextPath() %>/register" method="post">
+	<h1>temp title (registration)</h1>
+	<!-- UserServlet URL: /register 과 action을 통해 연결 -->
+	<form action="<%=request.getContextPath()%>/register" method="post">
 		First Name: <input type="text" name="firstName"><br>
 		Last Name: <input type="text" name="lastName"><br>
 		User ID: <input type="text" name="userName"><br>

@@ -1,3 +1,9 @@
+README.md로 이전
+README.md 참조
+
+
+
+
 포트폴리오 개발노트 2023 3월
 개발인원 3명
 JSP, JSTL, MVC, SERVLET, ECLIPSE, MYSQL...

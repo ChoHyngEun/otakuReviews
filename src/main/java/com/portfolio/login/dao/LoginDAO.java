@@ -6,12 +6,14 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.portfolio.login.model.UserLogin;
+//import com.portfolio.login.model.UserLogin; //login 테이블을 따로 만들었었으나, user 테이블로 통일시켰으므로 미사용
+import com.portfolio.registration.model.User;
 
 public class LoginDAO {
 	
-	//UserLogin.java 모델로부터 login information을 get하여 validate하기위함 //passing UserLogin parameters
-	public boolean validate(UserLogin userLogin) throws ClassNotFoundException{
+	//User.java 모델로부터 login information을 get하여 validate하기위함 //passing UserLogin parameters
+	//MySQL 테이블중 Login 테이블 대신 User 테이블 (회원가입 데이터) 이용
+	public boolean validate(User user) throws ClassNotFoundException{
 		//false by default
 		boolean checkStatus = false;
 		
@@ -21,11 +23,11 @@ public class LoginDAO {
 		try (Connection connection = DriverManager
 				.getConnection("jdbc:mysql://localhost:3306/portfolio?useSSL=false", "root", "root");
 				
-			//PreparedStatement 선언 및 query	
+			//PreparedStatement 선언 및 query	//MySQL root의 user 테이블 사용
 			PreparedStatement preparedStatement = connection
-						.prepareStatement("select * from login where username = ? and password = ?")){
-			preparedStatement.setString(1, userLogin.getUserName());
-			preparedStatement.setString(2, userLogin.getPassword());
+						.prepareStatement("select * from user where username = ? and password = ?")){
+			preparedStatement.setString(1, user.getUserName());
+			preparedStatement.setString(2, user.getPassword());
 			
 			//execute query 후 결과 확인
 			System.out.println(preparedStatement);

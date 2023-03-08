@@ -28,7 +28,7 @@ public class UserServlet extends HttpServlet {
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		
 		//forwarding을 위한 dispatcher (1/2)
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/userRegistration.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/ui/userRegistration.jsp");
 		dispatcher.forward(request, response);
 	}
 
@@ -62,7 +62,7 @@ public class UserServlet extends HttpServlet {
 		//userRegistration.jsp using method post.. 그래서 dispatcher 여기에 추가
 		//when doPost (submit), page will redirect to userInfo.jsp
 		//(2/2)
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/userInfo.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/ui/userInfo.jsp");
 		dispatcher.forward(request, response);
 		//redirect to where? 일단 보류
 //		response.sendRedirect("");
