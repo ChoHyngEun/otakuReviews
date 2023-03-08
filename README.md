@@ -68,14 +68,18 @@ com.portfolio.registration.<br>
 <br>
 2.MySQL<br><br>
 (query file name: forPortfolio)<br>
---03.07<br>
+<br>
 :rose:<user 등록 sql><br>
+<br>
+--03.07<br>
 //added user table (id: auto_increment)<br>
 //added phone to user table<br>
 //now using user table for both login and registration<br>
 <br>
 :rose:<user 로그인 sql><br>
 //added login table<br>
+<br>
+--03.08<br>
 //deleted login table<br>
 <br>
 ===========================================================<br>
