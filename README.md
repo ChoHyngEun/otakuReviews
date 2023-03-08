@@ -27,7 +27,7 @@ servlet nav guide<br>
 <br>
 🌸
 <br>
-JSP, JSTL, MVC, SERVLET, ECLIPSE, MYSQL...<br>
+JSP, JSTL, JDBC, MVC, SERVLET, ECLIPSE, MYSQL...<br>
 portfolio[jsp_data main]<br>
 com.portfolio.registration.<br>
 //used com.mysql.cj.jdbc.Driver, not com.mysql.jdbc.Driver (depends on connector version)<br>
