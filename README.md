@@ -1,11 +1,12 @@
 <div align=center>
   
-**OtakuReviews**<br>*<sub>this is where you will shine, mr.otaku.</sub>*<br>
+**:heart:OtakuReviews:heart:**<br>*<sub>this is where you will shine, mr.otaku.:kiss:</sub>*<br>
 <br>
 =======================<br>
 <br>
 포트폴리오 개발노트 2023 3월<br>
-팀명: **손하연 _The Queen_**<br>
+팀명: 🌸 **손하연 _The Queen_** :crown:<br>
+개발인원: 3명:family_man_man_girl:
 목표: <br>
 <br>
 =======================<br>
