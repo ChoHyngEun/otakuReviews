@@ -10,9 +10,9 @@
 팀명: 🌸 **손하연 _The Queen_** :crown:<br>
 개발인원: 3명:family_man_man_girl:<br>
 목표: <br>
-<br>
+  
 ![](https://media.giphy.com/media/3o7TKDcovELwB2DM64/giphy.gif)
-<br>
+  
 =======================<br>
 <br>
 servlet nav guide<br>
@@ -94,17 +94,7 @@ com.portfolio.registration.<br>
 <br>
 3. 기타<br>
 <br>
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+<br>
+🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸<br>
+<br>
   </div>
