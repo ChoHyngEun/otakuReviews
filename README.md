@@ -2,7 +2,7 @@
   
 **OtakuReviews**<br>*<sub>this is where you will shine, mr.otaku.</sub>*<br>
 <br>
-==========================================================<br>
+===========================<br>
 <br>
 포트폴리오 개발노트 2023 3월<br>
 팀명: **손하연 _The Queen_**<br>
