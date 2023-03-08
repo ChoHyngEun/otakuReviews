@@ -9,9 +9,11 @@
 목표: <br>
 <br>
 =======================<br>
+<br>
 servlet nav guide<br>
   /register (회원가입 화면)<br>
   /login.jsp (로그인 화면)<br>
+<br>
 =======================<br>
 JSP, JSTL, MVC, SERVLET, ECLIPSE, MYSQL...<br>
 portfolio[jsp_data main]<br>
