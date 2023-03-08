@@ -37,7 +37,7 @@ com.portfolio.registration.<br>
 <br>
 1.MVC (Model-View-Controller) 패턴<br><br>
 
-<MVC와 user 등록 시스템 구축><br><br>
+:rose:<MVC와 user 등록 시스템 구축><br><br>
   
 --03.07<br>
 //added model, dao, controller packages<br>
@@ -50,7 +50,7 @@ com.portfolio.registration.<br>
   
 --03.08<br>
 
-<MVC와 user 로그인&검증 시스템 구축><br><br>
+:rose:<MVC와 user 로그인&검증 시스템 구축><br><br>
   
 --03.07<br>
 //added UserLogin.java (JavaBean)<br>
@@ -61,7 +61,7 @@ com.portfolio.registration.<br>
 //added LoginServlet.java (Servlet)<br>
 //added login.jsp<br>
 //added welcome.jsp<br>
-//
+//added alert feature to LoginServlet.java (in case login validation fails)<br>
 
 
 ===========================================================<br>
@@ -69,12 +69,14 @@ com.portfolio.registration.<br>
 2.MySQL<br><br>
 (query file name: forPortfolio)<br>
 --03.07<br>
-<user 등록 sql><br>
+:rose:<user 등록 sql><br>
 //added user table (id: auto_increment)<br>
 //added phone to user table<br>
+//now using user table for both login and registration<br>
 <br>
-<user 로그인 sql><br>
+:rose:<user 로그인 sql><br>
 //added login table<br>
+//deleted login table<br>
 <br>
 ===========================================================<br>
 <br>
