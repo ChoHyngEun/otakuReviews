@@ -53,6 +53,8 @@ com.portfolio.registration.<br>
 --03.08<br>
 //added LoginServlet.java (Servlet)<br>
 //added login.jsp<br>
+//added welcome.jsp<br>
+//
 
 
 ===========================================================<br>
