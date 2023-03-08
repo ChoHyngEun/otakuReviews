@@ -1,3 +1,4 @@
+<div align=center>
 **OtakuReviews**<br>*<sub>this is where you will shine, mr.otaku.</sub>*<br>
 <br>
 ==========================================================<br>
@@ -24,8 +25,9 @@ com.portfolio.registration.<br>
 ===========================================================<br>
 <br>
 1. MVC (Model-View-Controller) 패턴<br>
---03.07<br>
+
 <MVC와 user 등록 시스템 구축><br>
+--03.07<br>
 //added model, dao, controller packages<br>
 //added User.java (JavaBean)<br>
 //added UserDAO.java (DAO)<br>
@@ -33,11 +35,17 @@ com.portfolio.registration.<br>
 //added userRegistration.jsp under views<br>
 //added userInfo.jsp under views<br>
 <br>
+--03.08<br>
+
 <MVC와 user 로그인&검증 시스템 구축><br>
 //added UserLogin.java (JavaBean)<br>
 //added LoginDAO.java (DAO)<br>
 <br>
-<br>
+--03.08<br>
+//added LoginServlet.java (Servlet)<br>
+//added login.jsp<br>
+
+
 ===========================================================<br>
 <br>
 2. MySQL<br>
@@ -54,3 +62,17 @@ com.portfolio.registration.<br>
 <br>
 3. 기타<br>
 <br>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
