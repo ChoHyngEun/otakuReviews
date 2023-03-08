@@ -16,12 +16,13 @@
 <br>
 개발인원: 3명:family_man_man_girl:<br>
 목표: JSP, MySQL, SERVLET, MVC Pattern을 기반으로한 커피 등 상품에 관한 리뷰 웹 구축<br>
+<br>
 구성<br>
-회원가입 (데이터연동)<br>
-로그인(데이터연동, validation)<br>
-리뷰페이지(product 리뷰 등록)<br>
-마이페이지(정보 확인, 수정 가능 외 리뷰 내역 살펴보기)<br>
-기타(수정 및 추가 예정)<br>
+1.회원가입 (데이터연동)<br>
+2.로그인(데이터연동, validation)<br>
+3.리뷰페이지(product 리뷰 등록)<br>
+4.마이페이지(정보 확인, 수정 가능 외 리뷰 내역 살펴보기)<br>
+5.기타(수정 및 추가 예정)<br>
 <br>
 ![Alt Text](https://media.giphy.com/media/3o7TKDcovELwB2DM64/giphy.gif)<br>
 <br>
