@@ -25,9 +25,9 @@ com.portfolio.registration.<br>
 <br>
 ===========================================================<br>
 <br>
-1. MVC (Model-View-Controller) 패턴<br>
+1. MVC (Model-View-Controller) 패턴<br><br>
 
-<MVC와 user 등록 시스템 구축><br>
+<MVC와 user 등록 시스템 구축><br><br>
 --03.07<br>
 //added model, dao, controller packages<br>
 //added User.java (JavaBean)<br>
@@ -38,7 +38,8 @@ com.portfolio.registration.<br>
 <br>
 --03.08<br>
 
-<MVC와 user 로그인&검증 시스템 구축><br>
+<MVC와 user 로그인&검증 시스템 구축><br><br>
+--03.07<br>
 //added UserLogin.java (JavaBean)<br>
 //added LoginDAO.java (DAO)<br>
 <br>
@@ -49,7 +50,7 @@ com.portfolio.registration.<br>
 
 ===========================================================<br>
 <br>
-2. MySQL<br>
+2. MySQL<br><br>
 (query file name: forPortfolio)<br>
 --03.07<br>
 <user 등록 sql><br>
