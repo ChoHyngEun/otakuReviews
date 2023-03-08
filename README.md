@@ -15,7 +15,7 @@
   ***The Queen***:crown:
 <br>
 개발인원: 3명:family_man_man_girl:<br>
-목표: <br>
+목표: JSP, SERVLET, MVC Pattern을 기반으로한 커피 등 상품에 관한 리뷰 웹 구축<br>
 <br>
 ![Alt Text](https://media.giphy.com/media/3o7TKDcovELwB2DM64/giphy.gif)<br>
 <br>
