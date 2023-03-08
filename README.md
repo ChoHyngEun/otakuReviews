@@ -24,7 +24,6 @@ com.portfolio.registration.<br>
 <br>
 ===========================================================<br>
 <br>
-<br>
 0.라이브러리: (webapp - WEB-INF - lib)<br>
   
 --03.07<br>
@@ -34,7 +33,6 @@ com.portfolio.registration.<br>
 //added servlet api<br>
 <br>
 ===========================================================<br>
-<br>
 <br>
 1.MVC (Model-View-Controller) 패턴<br><br>
 
