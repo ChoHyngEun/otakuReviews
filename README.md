@@ -16,8 +16,8 @@ com.portfolio.registration.<br>
 <br>
 ===========================================================<br>
 <br>
-  
-0. 라이브러리: (webapp - WEB-INF - lib)<br>
+<br>
+0.라이브러리: (webapp - WEB-INF - lib)<br>
   
 --03.07<br>
 //added jsp api 2.2<br>
@@ -27,7 +27,7 @@ com.portfolio.registration.<br>
 <br>
 ===========================================================<br>
 <br>
-  
+<br>
 1. MVC (Model-View-Controller) 패턴<br><br>
 
 <MVC와 user 등록 시스템 구축><br><br>
