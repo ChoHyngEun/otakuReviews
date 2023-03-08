@@ -1,5 +1,7 @@
 <div align=center>
-  
+<br>
+🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸<br>
+<br>
 **:heart:OtakuReviews:heart:**<br>*<sub>this is where you will shine, mr.otaku.:kiss:</sub>*<br>
 <br>
 =======================<br>
@@ -8,9 +10,8 @@
 팀명: 🌸 **손하연 _The Queen_** :crown:<br>
 개발인원: 3명:family_man_man_girl:<br>
 목표: <br>
-🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸
+<br>
 ![](https://media.giphy.com/media/3o7TKDcovELwB2DM64/giphy.gif)
-🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸
 <br>
 =======================<br>
 <br>
