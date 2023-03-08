@@ -28,7 +28,7 @@ com.portfolio.registration.<br>
 ===========================================================<br>
 <br>
 <br>
-1. MVC (Model-View-Controller) 패턴<br><br>
+1.MVC (Model-View-Controller) 패턴<br><br>
 
 <MVC와 user 등록 시스템 구축><br><br>
   
@@ -57,7 +57,7 @@ com.portfolio.registration.<br>
 
 ===========================================================<br>
 <br>
-2. MySQL<br><br>
+2.MySQL<br><br>
 (query file name: forPortfolio)<br>
 --03.07<br>
 <user 등록 sql><br>
