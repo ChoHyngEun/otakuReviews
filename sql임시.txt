@@ -1,0 +1,37 @@
+sql naming guide (03.09.2023)
+
+0. user table
+
+first name: firstName
+last name: lastName
+user ID: userName
+address: address
+password: password
+email: email
+phone: phone
+
+0. product table
+
+상품id : product_id (pk)
+상품명 : product_name
+상품설명 : product_info
+상품이미지 : product_img
+브랜드id : brand_id (fk)
+브랜드명 : brand_name (fk)
+
+1. review table
+
+리뷰id : review_id (pk)
+상품id : product_id (fk)
+상품명 : product_name
+상품설명 : product_info
+상품이미지 : product_img
+리뷰등록일자 review_date
+작성자 ID : userName (fk)
+조회수 : view_count
+인기도 : likes
+
+2. brand table
+
+브랜드id : brand_id (pk)
+브랜드명 : brand_name
