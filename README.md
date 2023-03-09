@@ -66,6 +66,9 @@ com.portfolio.registration.<br>
 <br>
 --03.08<br>
 <br>
+--03.09<br>
+//added user info display (request.getParameter //내장객체 사용) to userInfo.jsp
+<br>
 <MVC와 user 로그인&검증 시스템 구축><br>
 <br>
 --03.07<br>
@@ -106,6 +109,8 @@ com.portfolio.registration.<br>
 🌸
 <br>
 3. 기타<br>
+--03.09<br>
+//added main.jsp (메인페이지로 사용 예정)
 <br>
 <br>
 🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸
