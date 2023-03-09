@@ -1,7 +1,7 @@
 <div align=center>
   
 <br>
-🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸
+🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸
 <br>
 <br>
   
@@ -15,7 +15,14 @@
   ***The Queen***:crown:
 <br>
 개발인원: 3명:family_man_man_girl:<br>
-목표: <br>
+목표: JSP, MySQL, SERVLET, MVC Pattern을 기반으로한 커피 등 상품에 관한 리뷰 웹 구축<br>
+<br>
+구성<br>
+1.회원가입 (데이터연동)<br>
+2.로그인(데이터연동, validation)<br>
+3.리뷰페이지(product 리뷰 등록)<br>
+4.마이페이지(정보 확인, 수정 가능 외 리뷰 내역 살펴보기)<br>
+5.기타(수정 및 추가 예정)<br>
 <br>
 ![Alt Text](https://media.giphy.com/media/3o7TKDcovELwB2DM64/giphy.gif)<br>
 <br>
@@ -27,7 +34,7 @@ servlet nav guide<br>
 <br>
 🌸
 <br>
-JSP, JSTL, MVC, SERVLET, ECLIPSE, MYSQL...<br>
+JSP, JSTL, JDBC, MVC, SERVLET, ECLIPSE, MYSQL...<br>
 portfolio[jsp_data main]<br>
 com.portfolio.registration.<br>
 //used com.mysql.cj.jdbc.Driver, not com.mysql.jdbc.Driver (depends on connector version)<br>
@@ -58,6 +65,9 @@ com.portfolio.registration.<br>
 //added userInfo.jsp under views<br>
 <br>
 --03.08<br>
+<br>
+--03.09<br>
+//added user info display (request.getParameter //내장객체 사용) to userInfo.jsp<br>
 <br>
 <MVC와 user 로그인&검증 시스템 구축><br>
 <br>
@@ -99,8 +109,10 @@ com.portfolio.registration.<br>
 🌸
 <br>
 3. 기타<br>
+--03.09<br>
+//added main.jsp (메인페이지로 사용 예정)
 <br>
 <br>
-🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸
+🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸
 <br>
 </div>
