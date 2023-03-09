@@ -9,6 +9,7 @@ address: address
 password: password
 email: email
 phone: phone
+//리뷰어 레벨 추가 예정........
 
 0. product table
 
@@ -23,9 +24,9 @@ phone: phone
 
 리뷰id : review_id (pk)
 상품id : product_id (fk)
-상품명 : product_name
-상품설명 : product_info
-상품이미지 : product_img
+상품명 : product_name (fk)
+상품설명 : product_info (fk)
+상품이미지 : product_img (fk)
 리뷰등록일자 review_date
 작성자 ID : userName (fk)
 조회수 : view_count
