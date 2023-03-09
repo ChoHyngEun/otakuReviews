@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <!-- LoginDAO와 연결 -->
 <%@ page import="com.portfolio.login.dao.*" %>
+<!-- 로그인 성공시 redirect되는 페이지 -->
 <!DOCTYPE html>
 <html>
 <head>

@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+ 
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +8,7 @@
 <title>Temp Title</title>
 </head>
 <body>
+<div align=center>
 	<h1>temp title (registration)</h1>
 	<!-- UserServlet URL: /register 과 action을 통해 연결 -->
 	<form action="<%=request.getContextPath()%>/register" method="post">
@@ -19,5 +21,6 @@
 		Phone: <input type="text" name="phone"><br>
 		<input type="submit" value="SUBMIT">
 	</form>
+</div>
 </body>
 </html>
