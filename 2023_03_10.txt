@@ -1,0 +1,63 @@
+CREATE DATABASE portfolio;
+
+USE portfolio;
+
+-- user registration --
+CREATE TABLE user(
+	id MEDIUMINT NOT NULL AUTO_INCREMENT,
+    first_name VARCHAR(15) DEFAULT NULL,
+    last_name VARCHAR(15) DEFAULT NULL,
+    username VARCHAR(15) DEFAULT NULL,
+    password VARCHAR(15) DEFAULT NULL,
+    address VARCHAR(50) DEFAULT NULL,
+    email VARCHAR(50) DEFAULT NULL,
+    phone VARCHAR(12) DEFAULT NULL,
+    `rank` INT NOT NULL DEFAULT '1',
+    PRIMARY KEY (id)
+);
+
+-- product table --
+CREATE TABLE product(
+	product_id INT DEFAULT 0 PRIMARY KEY, -- 상품 고유번호
+    product_name VARCHAR(15) DEFAULT NULL, -- 상품 이름
+    product_info VARCHAR(300) DEFAULT NULL, -- 상품 정보
+    product_img VARCHAR(300) DEFAULT NULL, -- 상품 이미지
+    product_category VARCHAR(30) NOT NULL, -- 상품 카테고리
+    brand_id VARCHAR(30) DEFAULT NULL, -- 브랜드 아이디
+    brand_name VARCHAR(30) DEFAULT NULL -- 브랜드명
+);
+
+-- review table --
+CREATE TABLE review(
+	review_id MEDIUMINT NOT NULL AUTO_INCREMENT PRIMARY KEY, -- 리뷰 아이디
+    review_date DATE, -- 리뷰 작성일
+    view_count INT DEFAULT 0 NOT NULL, -- 리뷰 카운트
+    likes INT DEFAULT 0 NOT NULL, -- 리뷰 좋아요 수
+    product_name VARCHAR(15) DEFAULT NULL, -- 상품 이름
+    product_id INT DEFAULT 0, -- 상품 고유번호
+    product_info VARCHAR(300) DEFAULT NULL, -- 상품 정보
+    userName VARCHAR(15) DEFAULT NULL, -- 유저 이름
+    product_img VARCHAR(300) DEFAULT NULL -- 상품 이미지
+);
+
+alter table review add column product_img varchar(300) default null; -- column 추가하기
+
+ALTER TABLE review -- review테이블과 product 테이블 연동
+ADD CONSTRAINT fk_product
+FOREIGN KEY (product_id)
+REFERENCES product(product_id)
+ON DELETE CASCADE;
+
+--
+ALTER TABLE review -- review테이블과 user테이블 연동
+ADD CONSTRAINT fk_user
+FOREIGN KEY (userName)
+REFERENCES user(username)
+ON DELETE CASCADE;
+
+-- brand table --
+CREATE TABLE brand(
+	brand_id MEDIUMINT NOT NULL AUTO_INCREMENT, -- 브랜드 아이디
+    brand_name VARCHAR(30) DEFAULT NULL, -- 브랜드명
+    PRIMARY KEY(brand_id) -- 브랜드아이디 고유번호
+);
