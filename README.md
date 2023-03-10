@@ -29,8 +29,9 @@
 🌸
 <br>
 servlet nav guide<br>
-  /register (회원가입 화면)<br>
-  /login.jsp (로그인 화면)<br>
+  ~~/register (회원가입 화면)<br>~~
+  ~~/login.jsp (로그인 화면)<br>~~
+  **start the server from portfolio package itself then you'll be welcomed by "index.html" where you can navigate to other jsp files.**
 <br>
 🌸
 <br>
