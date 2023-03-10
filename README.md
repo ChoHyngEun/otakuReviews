@@ -72,16 +72,23 @@ com.portfolio.registration.<br>
 <MVC와 user 로그인&검증 시스템 구축><br>
 <br>
 --03.07<br>
-<br>
 //added UserLogin.java (JavaBean)<br>
 //added LoginDAO.java (DAO)<br>
-<br>
 --03.08<br>
-<br>
 //added LoginServlet.java (Servlet)<br>
 //added login.jsp<br>
 //added welcome.jsp<br>
 //added alert feature to LoginServlet.java (in case login validation fails)<br>
+<br>
+<MVC와 product review 등록 시스템 구축><br>
+--03.10<br>
+//added Product.java (JavaBean)<br>
+//added ProductServlet.java (Servlet)<br>
+//added ProductDAO.java (DAO)<br>
+<br>
+<MVC와 product review 리스트 시스템 구축><br>
+--03.10<br>
+//temporarily added packages for review model, review servlet, review dao<br>
 <br>
 🌸
 <br>
@@ -99,19 +106,24 @@ com.portfolio.registration.<br>
 <user 로그인 sql><br>
 <br>
 --03.07<br>
-<br>
 //added login table<br>
-<br>
 --03.08<br>
-<br>
 //deleted login table<br>
-<br>
+--03.10<br>
+//added table for brand (subject to changes)
+//added table for review (subject to changes)
 🌸
 <br>
 3. 기타<br>
 --03.09<br>
-//added main.jsp (메인페이지로 사용 예정)
+//added main.jsp (메인페이지로 사용 예정)<br>
 <br>
+--03.10<br>
+//removed main.jsp<br>
+//added index.html (replacing main.jsp)<br>
+<br>
+--03.11<br>
+//changed MySQL password to "Tkfkdgo450." Thus, updated DAO files as well.<br>
 <br>
 🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸
 <br>
