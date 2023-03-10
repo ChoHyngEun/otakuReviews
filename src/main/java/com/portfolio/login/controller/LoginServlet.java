@@ -22,11 +22,7 @@ import com.portfolio.registration.model.User;
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	//LoginDAO object 생성
-	private LoginDAO loginDAO;
-	
-	public void init() {
-		loginDAO = new LoginDAO();
-	}
+	private LoginDAO loginDAO = new LoginDAO();
 	
 	//POST방식 사용시.
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -37,14 +33,25 @@ public class LoginServlet extends HttpServlet {
 		User user = new User();
 		user.setUserName(userName);
 		user.setPassword(password);
-
+		
+		//for alert
+		PrintWriter out = response.getWriter();
+		
 		try {
+			//validate 성공시
 			if(loginDAO.validate(user)) {
-				//validate 성공시 welcome.jsp로 이동
-				response.sendRedirect("welcome.jsp");
+				//alert 띄우기
+				out.println("<script type=\"text/javascript\">");
+				out.println("alert('login successful')");
+				//메인페이지로 이동
+				out.println("location='index.html';");
+				out.println("</script>");
+				//메인페이지로 이동 (방법2)
+				//response.sendRedirect("index.html");
+			//validate 실패시
 			}else {
-				PrintWriter out = response.getWriter();
-//				HttpSession session = request.getSession();
+				
+				//HttpSession session = request.getSession();
 				
 				//alert 띄우기
 				out.println("<script type=\"text/javascript\">");

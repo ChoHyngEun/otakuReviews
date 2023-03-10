@@ -21,7 +21,7 @@ public class LoginDAO {
 		
 		//database 연결
 		try (Connection connection = DriverManager
-				.getConnection("jdbc:mysql://localhost:3306/portfolio?useSSL=false", "root", "root");
+				.getConnection("jdbc:mysql://localhost:3306/portfolio?useSSL=false", "root", "Tkfkdgo450.");
 				
 			//PreparedStatement 선언 및 query	//MySQL root의 user 테이블 사용
 			PreparedStatement preparedStatement = connection

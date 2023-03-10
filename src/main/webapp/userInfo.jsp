@@ -3,6 +3,7 @@
 %>
     
 <!-- request 내장 객체 바인딩을 통해 user 정보 표시 //request.getParameter 사용 -->
+<!-- User에 저장된 객체 정보를 불러오기 위함임 (request.getParameter) -->
 <%
 	request.setCharacterEncoding("utf-8");
 	String firstName=request.getParameter("firstName");
@@ -24,13 +25,14 @@
 <div align=center>
 	<h1>user registration successful</h1>
 	<br>
+	<!-- User에 저장된 유저 정보를 가져옴 -->
 	<h3>firstName: <%=firstName %></h3>
 	<h3>lastName: <%=lastName %></h3>
 	<h3>user ID: <%=userName %></h3>
 	<h3>address: <%=address %></h3>
 	<h3>email: <%=email %></h3>
 	<h3>phone: <%=phone %></h3>
-	<a href="main.jsp"><button>lets go bro... sheeeeeeet...</button></a>
+	<a href="login.jsp"><button>Login</button></a>
 	
 </div>
 </body>
