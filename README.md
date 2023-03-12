@@ -86,6 +86,9 @@ com.portfolio.registration.<br>
 <MVC와 product review 리스트 시스템 구축><br>
 --03.10<br>
 //temporarily added packages for review model, review servlet, review dao<br>
+--03.12<br>
+//added MVC for review sql and jsp
+//added jstl libraries and statements in review.jsp (review.jsp working as intended and userInfo.jsp will replace review.jsp to list only review items that belong to the signed-in user
 <br>
 🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸<br>
 <br>
@@ -118,6 +121,8 @@ com.portfolio.registration.<br>
 //added index.html (replacing main.jsp)<br>
 --03.11<br>
 //changed MySQL password to "Tkfkdgo450." Thus, updated DAO files as well.<br>
+--03.12<br>
+//added jstl core and jstl sql library and statements in review.jsp
 <br>
 🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸<br>
 <br>
