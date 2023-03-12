@@ -3,7 +3,7 @@
 <!-- reviewRegistration.jsp에서 리뷰를 등록한 후 redirect되는 페이지 -->
 <!-- ProductServlet에 PrintWriter location을 이용하였음 -->
 
-<!-- jstl 라이브러리 core와 sql 사용 -->
+<!-- jstl 라이브러리 core와 sql를 사용하여 리스트를 구현해본 jsp 파일 -->
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>   
 
@@ -11,7 +11,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>review item list page</title>
+<title>All Reviews</title>
 </head>
 <body>
 
@@ -30,7 +30,8 @@
     
 <div align=center>
 
-	<h1>이곳은 리뷰 리스트를 보여주는 페이지입니다.</h1>
+	<h1>Every Otaku's Reviews HERE</h1>
+	<i>hi</i><br><hr><br>
 	
 	<!-- review item list 출력 table -->
 	<table border="1">

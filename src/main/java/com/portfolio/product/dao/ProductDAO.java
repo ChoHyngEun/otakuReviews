@@ -15,6 +15,7 @@ import com.portfolio.product.model.Product;
 public class ProductDAO {
 	//passing product object
 	public int registerProduct(Product product) throws ClassNotFoundException{
+		
 		//테이블에 product 등록하는 SQL statement
 		String insert_product = "insert into product" + "(product_name, product_brand, product_price, product_review) values "
 		+ "(?,?,?,?);";
@@ -25,7 +26,7 @@ public class ProductDAO {
 		//mysql connector 버전에 따라 ..mysql.jdbc.. 를 사용해야 할 수 있음.
 		Class.forName("com.mysql.cj.jdbc.Driver");
 	
-		//connect to mySQL using jdbc url
+		//connect to mySQL using jdbc url.. 
 		try (Connection connection = DriverManager //"root"@"localhost"
 				.getConnection("jdbc:mysql://localhost:3306/portfolio?useSSL=false", "root", "Tkfkdgo450.");
 				
@@ -51,11 +52,10 @@ public class ProductDAO {
 		
 	}
 	
-	//show product(review) list method
 	private Statement stmt;
 	private Connection con;
 	
-	//ListServlet에 사용될 listProducts method (리뷰 리스트 출력)
+	//UserPageServlet에 사용될 listProducts method (리뷰 리스트 출력용)
 	public List<Product> listProducts(){
 		
 		List<Product> list = new ArrayList<Product>();
@@ -106,5 +106,6 @@ public class ProductDAO {
 		}
 		return list;
 	}
+	
 }
 	

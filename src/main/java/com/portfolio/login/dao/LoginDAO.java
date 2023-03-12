@@ -12,6 +12,7 @@ import com.portfolio.registration.model.User;
 public class LoginDAO {
 	
 	//User.java 모델로부터 login information을 get하여 validate하기위함 //passing UserLogin parameters
+	//data에 존재하는 user와 password인지 체크
 	//MySQL 테이블중 Login 테이블 대신 User 테이블 (회원가입 데이터) 이용
 	public boolean validate(User user) throws ClassNotFoundException{
 		//false by default

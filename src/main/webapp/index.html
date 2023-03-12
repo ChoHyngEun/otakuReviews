@@ -1,22 +1,40 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>index.html (메인페이지)</title>
+<title>Otaku Review World</title>
 <style type="text/css">
 	ul{
 		list-style: none;
 	}
+	.top{
+		float: right;
+	}
+	.top ul li{
+		font-size: 2vw;
+		float: right;
+		margin-right: 2vw;
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+	}
 </style>
 </head>
 <body>
-<div align=center>
+<div class="top">
+	<!-- nav list -->
 	<ul>
-		<li><a href="login.jsp">login.jsp (로그인 하기)</a></li>
-		<li><a href="userRegistration.jsp">userRegistration.jsp (회원 가입하기)</a>
-		<li><a href="reviewRegistration.jsp">reviewRegistration.jsp (리뷰 등록하기)</a>
-		<li><a href="review.jsp">review.jsp (리뷰 보러가기)</a>
+		<li><a href="login.jsp">login.jsp</a></li>
+		<li><a href="userRegistration.jsp">userRegistration.jsp</a>
+		<li><a href="reviewRegistration.jsp">reviewRegistration.jsp</a>
+		<li><a href="review.jsp">review.jsp</a>
 	</ul>
+	<!-- logout form -->
+	<form action="logout" method="get">
+        <input type="submit" value="Logout" />
+    </form>
 </div>
 </body>
 </html>
