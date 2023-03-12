@@ -3,7 +3,11 @@ package com.portfolio.product.dao;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.portfolio.product.model.Product;
 
@@ -46,4 +50,61 @@ public class ProductDAO {
 		return result;
 		
 	}
+	
+	//show product(review) list method
+	private Statement stmt;
+	private Connection con;
+	
+	//ListServlet에 사용될 listProducts method (리뷰 리스트 출력)
+	public List<Product> listProducts(){
+		
+		List<Product> list = new ArrayList<Product>();
+		
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			System.out.println("드라이버 로딩 성공");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/portfolio?useSSL=false", "root", "Tkfkdgo450.");
+			System.out.println("connected");
+			stmt = con.createStatement();
+			System.out.println("statement created");
+			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		try {
+
+			String query = "select * from product";
+			System.out.println(query);
+			ResultSet rs = stmt.executeQuery(query);
+			
+			while(rs.next()) {
+				
+				int id = rs.getInt("product_id");
+				String name = rs.getString("product_name");
+				String brand = rs.getString("product_brand");
+				float price = rs.getFloat("product_price");
+				String review = rs.getString("product_review");
+				
+				Product product = new Product();
+				
+				product.setProduct_id(id);
+				product.setProduct_name(name);
+				product.setProduct_brand(brand);
+				product.setProduct_price(price);
+				product.setProduct_review(review);
+				list.add(product);
+			
+			}
+			
+			rs.close();
+			stmt.close();
+			con.close();
+				
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return list;
+	}
 }
+	

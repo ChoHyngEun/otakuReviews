@@ -9,14 +9,16 @@
 <title>product review upload page</title>
 </head>
 <body>
+	<div align=center>
 	<h1>submit product review</h1>
 	<!-- product 등록 후 ProductServlet으로 전송 -->
 	<form action="<%=request.getContextPath()%>/product" method="post">
 		Product_Name <input type="text" name="product_name"><br>
 		Product_Brand <input type="text" name="product_brand"><br>
-		Product_Price <input type="text" name="product_price"><br>
+		Product_Price (number) <input type="text" name="product_price"><br>
 		Product_review <input type="text" name="product_review"><br>
 		<input type="submit" value="SUBMIT">
 	</form>
+	</div>
 </body>
 </html>
