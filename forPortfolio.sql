@@ -1,5 +1,7 @@
 -- user registration -- -- -- -- -- -- -- -- -- -- -- --
 
+drop table user;
+
 create table user(
 	id mediumint not null auto_increment,
     first_name varchar(15) default null,
@@ -12,34 +14,44 @@ create table user(
     primary key (id)
     );
     
-    drop table user;
     select * from user;
---     select * from portfolio.user;
-
--- -----------------------------------------
 
 -- product table ---------------------------
 
-create table product(
-	product_id int(10) default 0 primary key,
-    product_name varchar(15) default null,
-    product_info varchar(300) default null,
-    product_img varchar(300) default null
+drop table product;
 
+create table product(
+	product_id mediumint not null auto_increment primary key,
+    product_name varchar(30) not null,
+    product_brand varchar(30) not null,
+    product_price float not null,
+    product_review varchar(500) not null
+    -- product_img varchar(300) default null
 );
 
--- review table ----------------------------
+select * from product;
+
+-- review table (기존) ----------------------------
+
+drop table review;
 
 create table review(
 	review_id mediumint not null auto_increment primary key,
-    review_date date,
-    view_count int default 0 not null,
-    likes int default 0 not null
+    content varchar(500) not null,
+    product_id mediumint not null,
+    username varchar(15) not null
 );
+
+select * from review;
+
 -- brand table -----------------------------
+
+drop table brand;
 
 create table brand(
 	brand_id mediumint not null auto_increment,
     brand_name varchar(30) default null,
     primary key(brand_id)
 );
+
+select * from brand;
