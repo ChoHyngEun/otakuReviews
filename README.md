@@ -26,13 +26,14 @@
 <br>
 ![Alt Text](https://media.giphy.com/media/3o7TKDcovELwB2DM64/giphy.gif)<br>
 <br>
-🌸
+🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸<br>
 <br>
 servlet nav guide<br>
-  /register (회원가입 화면)<br>
-  /login.jsp (로그인 화면)<br>
+  ~~/register (회원가입 화면)<br>~~
+  ~~/login.jsp (로그인 화면)<br>~~
+  **start the server from portfolio package itself then you'll be welcomed by "index.html" where you can navigate to other jsp files.**<br>
 <br>
-🌸
+🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸<br>
 <br>
 JSP, JSTL, JDBC, MVC, SERVLET, ECLIPSE, MYSQL...<br>
 portfolio[jsp_data main]<br>
@@ -40,22 +41,21 @@ com.portfolio.registration.<br>
 //used com.mysql.cj.jdbc.Driver, not com.mysql.jdbc.Driver (depends on connector version)<br>
 //portfolio - build path - class module<br>
 <br>
-🌸
+🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸<br>
 <br>
 0.라이브러리: (webapp - WEB-INF - lib)<br>
-  
+<br>
 --03.07<br>
 //added jsp api 2.2<br>
 //added jstl 1.2<br>
 //added mysql connector<br>
 //added servlet api<br>
 <br>
-🌸
+🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸<br>
 <br>
 1.MVC (Model-View-Controller) 패턴<br>
 <br>
 <MVC와 user 등록 시스템 구축><br>
-<br>
 --03.07<br>
 //added model, dao, controller packages<br>
 //added User.java (JavaBean)<br>
@@ -63,56 +63,62 @@ com.portfolio.registration.<br>
 //added UserServlet.java (Servlet)<br>
 //added userRegistration.jsp under views<br>
 //added userInfo.jsp under views<br>
-<br>
 --03.08<br>
-<br>
 --03.09<br>
 //added user info display (request.getParameter //내장객체 사용) to userInfo.jsp<br>
 <br>
 <MVC와 user 로그인&검증 시스템 구축><br>
-<br>
 --03.07<br>
-<br>
 //added UserLogin.java (JavaBean)<br>
 //added LoginDAO.java (DAO)<br>
-<br>
 --03.08<br>
-<br>
 //added LoginServlet.java (Servlet)<br>
 //added login.jsp<br>
 //added welcome.jsp<br>
 //added alert feature to LoginServlet.java (in case login validation fails)<br>
 <br>
-🌸
+<MVC와 product review 등록 시스템 구축><br>
+--03.10<br>
+//added Product.java (JavaBean)<br>
+//added ProductServlet.java (Servlet)<br>
+//added ProductDAO.java (DAO)<br>
+<br>
+<MVC와 product review 리스트 시스템 구축><br>
+--03.10<br>
+//temporarily added packages for review model, review servlet, review dao<br>
+<br>
+🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸<br>
 <br>
 2.MySQL<br>
 (query file name: forPortfolio)<br>
 <br>
 <user 등록 sql><br>
-<br>
 --03.07<br>
-<br>
 //added user table (id: auto_increment)<br>
 //added phone to user table<br>
 //now using user table for both login and registration<br>
 <br>
 <user 로그인 sql><br>
-<br>
 --03.07<br>
-<br>
 //added login table<br>
-<br>
 --03.08<br>
-<br>
 //deleted login table<br>
+--03.10<br>
+//added table for brand (subject to changes)<br>
+//added table for review (subject to changes)<br>
 <br>
-🌸
+🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸<br>
 <br>
 3. 기타<br>
+<br>
 --03.09<br>
-//added main.jsp (메인페이지로 사용 예정)
+//added main.jsp (메인페이지로 사용 예정)<br>
+--03.10<br>
+//removed main.jsp<br>
+//added index.html (replacing main.jsp)<br>
+--03.11<br>
+//changed MySQL password to "Tkfkdgo450." Thus, updated DAO files as well.<br>
 <br>
-<br>
-🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸
+🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸<br>
 <br>
 </div>
