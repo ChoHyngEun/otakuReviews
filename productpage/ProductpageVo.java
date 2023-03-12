@@ -1,6 +1,5 @@
 package com.portfolio.productpage;
 
-import java.sql.Date;
 
 public class ProductpageVo {
 	
