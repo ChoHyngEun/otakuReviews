@@ -4,9 +4,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
+
+<title>More Info</title>
+<script src="js/jquery-3.6.3.min.js"></script>
+<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<script type="text/javascript" src="js/productInfo.js"></script>
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/productInfo.css" rel="stylesheet" type="text/css">
-<title>More Info</title>
+
 </head>
 <body>
 
@@ -17,12 +22,12 @@
 <div id="top">
 	<div class="pro_img">
 	  <ul class="slide1">
-		<li><img src="images/hot_americano.jpg" width="400px" height="400px"></li>
-		<li><img src="images/ice_americano.jpg" width="400px" height="400px"></li>
+		<li><img src="images/hot_americano.jpg" width="500px" height="500px"></li>
+		<li><img src="images/ice_americano.jpg" width="500px" height="500px"></li>
 	  </ul>
-	  <p class="controller">
-	  	<span class="prev">&lang;</span>
-	  	<span class="next">&rang;</span>
+	  <p class="controller1">
+	  	<span class="prev1">&lang;</span>
+	  	<span class="next1">&rang;</span>
 	  </p>
 	</div>
 
@@ -36,8 +41,14 @@
 </div>
 
 <div id="middle">
-	<img src="images/big1.jpg" width="1200px" height="500px">
-	<img src="images/big2.jpg" width="1200px" height="500px">
+	<ul class="slide2">
+		<li><img src="images/big1.jpg" width="1200px" height="500px"></li>
+		<li><img src="images/big2.jpg" width="1200px" height="500px"></li>
+	</ul>
+    <p class="controller2">
+	  	<span class="prev2">&lang;</span>
+	  	<span class="next2">&rang;</span>
+	</p>
 </div>
 
 <div id="bottom">
