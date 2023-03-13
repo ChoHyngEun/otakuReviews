@@ -19,7 +19,7 @@
 	<sql:setDataSource
         var="dataSource"
         driver="com.mysql.cj.jdbc.Driver"
-        url="jdbc:mysql://localhost:3306/portfolio"
+        url="jdbc:mysql://localhost:3306/portfolio?useSSL=false"
         user="root" password="Tkfkdgo450."
     />
     
