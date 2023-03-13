@@ -22,7 +22,10 @@
 2.로그인(데이터연동, validation)<br>
 3.리뷰페이지(product 리뷰 등록)<br>
 4.마이페이지(정보 확인, 수정 가능 외 리뷰 내역 살펴보기)<br>
-5.기타(수정 및 추가 예정)<br>
+~~5.기타(수정 및 추가 예정)<br>~~
+5.관리자 admin 로그인 구현 및 관리자용 jsp 페이지 구현 (모든 리뷰, 유저 리스트)<br>
+6.session 바인딩 로그인 로그아웃 구현<br>
+7.(예정) 관리자 페이지 리뷰, 유저정보 수정 추가 삭제 구현<br>
 <br>
 ![Alt Text](https://media.giphy.com/media/3o7TKDcovELwB2DM64/giphy.gif)<br>
 <br>
@@ -76,6 +79,11 @@ com.portfolio.registration.<br>
 //added login.jsp<br>
 //added welcome.jsp<br>
 //added alert feature to LoginServlet.java (in case login validation fails)<br>
+--03.12~13<br>
+//updated LoginServlet.java<br>
+//added Logout Servlet<br>
+//added session login and logout<br>
+//added admin login system<br>
 <br>
 <MVC와 product review 등록 시스템 구축><br>
 --03.10<br>
@@ -87,8 +95,10 @@ com.portfolio.registration.<br>
 --03.10<br>
 //temporarily added packages for review model, review servlet, review dao<br>
 --03.12<br>
-//added MVC for review sql and jsp
-//added jstl libraries and statements in review.jsp (review.jsp working as intended and userInfo.jsp will replace review.jsp to list only review items that belong to the signed-in user
+//added MVC for review sql and jsp<br>
+//added jstl libraries and statements in review.jsp (review.jsp working as intended and userInfo.jsp will replace review.jsp to list only review items that belong to the signed-in user<br>
+--03.13<br>
+//added admin jsp page where all products and user information are displayed<br>
 <br>
 🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸<br>
 <br>
@@ -122,7 +132,9 @@ com.portfolio.registration.<br>
 --03.11<br>
 //changed MySQL password to "Tkfkdgo450." Thus, updated DAO files as well.<br>
 --03.12<br>
-//added jstl core and jstl sql library and statements in review.jsp
+//added jstl core and jstl sql library and statements in review.jsp<br>
+--03.13<br>
+//updated css<br>
 <br>
 🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸<br>
 <br>
