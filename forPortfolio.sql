@@ -1,3 +1,10 @@
+-- 시간대 설정 에러가 뜰 경우 --------------------------------
+
+select @@system_time_zone; -- 내 시스템 시간 확인
+select @@global.time_zone; -- 글로벌 시간대 확인
+set @@global.time_zone = '9:00'; -- 시간대 변경
+select @@global.time_zone; -- 시간대 확인
+
 -- user registration -- -- -- -- -- -- -- -- -- -- -- --
 
 drop table user;
