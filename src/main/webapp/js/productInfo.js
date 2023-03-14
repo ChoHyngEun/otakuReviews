@@ -1,3 +1,5 @@
+/* branch main */
+
 $(document).ready(function() {
   // 첫 번째 이미지 슬라이드 초기화
   var slideIndex1 = 1;
@@ -58,4 +60,5 @@ $(document).ready(function() {
     }
     slides[slideIndex2-1].style.display = 'block';
   }
+  
 });

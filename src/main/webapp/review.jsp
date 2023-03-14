@@ -1,3 +1,4 @@
+<!-- branch main -->
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!-- reviewRegistration.jsp에서 리뷰를 등록한 후 redirect되는 페이지 -->

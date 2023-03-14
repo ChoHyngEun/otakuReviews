@@ -1,3 +1,4 @@
+<!-- branch main -->
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!-- 회원가입 page -->
@@ -7,20 +8,57 @@
 <head>
 <meta charset="UTF-8">
 <title>Member Registration</title>
+<link rel="stylesheet" href="css/userinfo.css">
 </head>
 <body>
+
 <div align=center>
-	<!-- UserServlet 서블릿에 전송 -->
-	<form action="<%=request.getContextPath()%>/register" method="post">
-		First Name: <input type="text" placeholder="David" name="firstName"><br><br>
-		Last Name: <input type="text" placeholder="Kim" name="lastName"><br><br>
-		User ID: <input type="text" placeholder="userID" name="userName"><br><br>
-		Password: <input type="password" placeholder="password" name="password"><br><br>
-		Address: <input type="text" placeholder="833 East River Pkwy" name="address"><br><br>
-		Email: <input type="text" placeholder="otaku@gmail.com" name="email"><br><br>
-		Phone: <input type="text" placeholder="01012345678"name="phone"><br><br>
-		<input type="submit" value="SUBMIT">
-	</form>
+
+<div class="login-box">
+
+  <h2>Sign Up</h2>
+  <form action="<%=request.getContextPath()%>/register" method="post">
+    <div class="user-box">
+      <input type="text" placeholder="David" name="firstName">
+      <label>First Name</label>
+    </div>
+    <div class="user-box">
+      <input type="text" placeholder="Kim" name="lastName">
+      <label>Last Name</label>
+    </div>
+    <div class="user-box">
+      <input type="text" placeholder="userID" name="userName">
+      <label>User ID</label>
+    </div>
+    <div class="user-box">
+      <input type="password" placeholder="password" name="password">
+      <label>PassWord</label>
+    </div>
+    <div class="user-box">
+      <input type="text" placeholder="833 East River Pkwy" name="address">
+      <label>Address</label>
+    </div>
+    <div class="user-box">
+      <input type="text" placeholder="otaku@gmail.com" name="email">
+      <label>Email</label>
+    </div>
+    <div class="user-box">
+      <input type="text" placeholder="01012345678"name="phone">
+      <label>Phone</label>
+    </div>
+    
+    <a href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <input type="submit" value="SUBMIT">
+ 	</a>
+  </form>
+  
 </div>
+
+</div>
+
 </body>
 </html>
