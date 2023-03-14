@@ -53,6 +53,6 @@
         </ul>
 		
 </div>
-<a href="index.jsp"><img src = "images/otaku.jpg"></a>
+
 </body>
 </html>

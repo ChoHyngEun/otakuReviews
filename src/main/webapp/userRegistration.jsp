@@ -10,9 +10,6 @@
 </head>
 <body>
 <div align=center>
-	<h1>We'll Otaku You 4EVA</h1>
-	<i>Thousands of other Otakus are hyped to see you join them</i><br><hr><br><br>
-	<a href="index.jsp"><img src = "images/otaku.jpg"></a>
 	<!-- UserServlet 서블릿에 전송 -->
 	<form action="<%=request.getContextPath()%>/register" method="post">
 		First Name: <input type="text" placeholder="David" name="firstName"><br><br>

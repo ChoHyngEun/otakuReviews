@@ -24,6 +24,7 @@ public class ProductServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		request.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html;charset=UTF-8");
 		
 		//parameters 요청
@@ -52,7 +53,7 @@ public class ProductServlet extends HttpServlet {
 		out.println("<script type=\"text/javascript\">");
 		out.println("alert('review registration successful')");
 		//review.jsp로 이동
-		out.println("location='review.jsp';");
+		out.println("location='productInfo.jsp';");
 		out.println("</script>");
 
 //		review.jsp로 포워딩

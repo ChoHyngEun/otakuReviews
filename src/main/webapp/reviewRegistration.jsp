@@ -10,11 +10,6 @@
 </head>
 <body>
 	<div align=center>
-	<h1>Feeling salty?</h1>
-	<i>leave a review on any product</i>
-	<i>show'em who the real boss is</i>
-	<br><hr><br>
-	<a href="index.jsp"><img src = "images/otaku.jpg"></a>
 	<!-- product 등록 후 ProductServlet으로 전송 -->
 	<form action="<%=request.getContextPath()%>/product" method="post">
 		Product Name: <input type="text" placeholder="Americano" name="product_name"><br><br>

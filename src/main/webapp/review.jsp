@@ -30,15 +30,11 @@
     
 <div align=center>
 
-	<h1>Every Otaku's Reviews HERE</h1>
-	<i>hi</i><br><hr><br>
-	<a href="index.jsp"><img src = "images/otaku.jpg"></a>
-	
 	<!-- review item list 출력 table -->
-	<table border="1">
+	<table border="1" class=review_table>
 	
             <caption><h2>List of reviews</h2></caption>
-            
+            <button type="button" onclick="location.href='reviewRegistration.jsp'">add</button>
             <!-- th 자동 출력 -->
             <tr>
 				<c:forEach var="columnName" items="${resultSet.columnNames}" >
@@ -50,7 +46,7 @@
         <c:forEach var="row" items="${resultSet.rowsByIndex}" >
 			
 			<!-- 각 row -->
-			<tr>
+			<tr class=content>
 				<!-- 각 row의 column td 출력 -->
 				<c:forEach var="column" items="${row}" varStatus="i">
 					<td>
