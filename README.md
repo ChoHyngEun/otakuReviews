@@ -25,7 +25,7 @@
 5.<완> 관리자 admin 로그인 구현 및 관리자용 jsp 페이지 구현 (모든 리뷰, 유저 리스트)<br>
 6.<완> session 바인딩 로그인 로그아웃 구현<br>
 7.(예정) 관리자 페이지 리뷰, 유저정보 수정 추가 삭제 구현<br>
-8.<진행중> product별 리뷰 상세페이지<
+8.<진행중> product별 리뷰 상세페이지<br>
 <br>
 ![Alt Text](https://media.giphy.com/media/3o7TKDcovELwB2DM64/giphy.gif)<br>
 <br>
