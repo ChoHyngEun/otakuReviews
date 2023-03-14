@@ -85,6 +85,11 @@ com.portfolio.registration.<br>
 //added session login and logout<br>
 //added admin login system<br>
 <br>
+--03.13<br>
+//deleted index.html
+//added index.jsp
+//completed login session binding system
+//edited index.jsp so that some features are hidden for signed-in users such as "회원가입" and "로그인"
 <MVC와 product review 등록 시스템 구축><br>
 --03.10<br>
 //added Product.java (JavaBean)<br>
