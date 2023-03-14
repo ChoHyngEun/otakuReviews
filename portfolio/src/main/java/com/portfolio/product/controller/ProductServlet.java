@@ -50,7 +50,7 @@ public class ProductServlet extends HttpServlet {
 		out.println("<script type=\"text/javascript\">");
 		out.println("alert('review registration successful')");
 		//review.jsp로 이동
-		out.println("location='review.jsp';");
+		out.println("location='productInfo.jsp';");
 		out.println("</script>");
 
 //		review.jsp로 포워딩

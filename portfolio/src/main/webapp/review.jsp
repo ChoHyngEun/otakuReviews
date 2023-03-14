@@ -37,7 +37,7 @@
 	<table border="1">
 	
             <caption><h2>List of reviews</h2></caption>
-            
+           <button type="button" onclick="location.href='reviewRegistration.jsp'">add</button>
             <!-- th 자동 출력 -->
             <tr>
 				<c:forEach var="columnName" items="${resultSet.columnNames}" >
@@ -66,7 +66,7 @@
 			</tr>
 		</c:forEach>
     </table><!-- review list table 종료 -->
-    
+
 </div>
 </body>
 </html>
