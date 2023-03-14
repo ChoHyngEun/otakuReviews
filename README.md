@@ -152,6 +152,11 @@ com.portfolio.registration.<br>
 //updated css<br>
 --03.14<br>
 //added images folder<br>
+//added index.css<br>
+//added reviewregistration.css<br>
+//added userinfo.css<br>
+//added main.js<br>
+//added youtube.js<br>
 <br>
 🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸<br>
 <br>
