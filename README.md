@@ -69,6 +69,9 @@ com.portfolio.registration.<br>
 --03.08<br>
 --03.09<br>
 //added user info display (request.getParameter //내장객체 사용) to userInfo.jsp<br>
+--03.14<br>
+//added util_forUserInsert.jsp<br>
+//added util_forUserDelete.jsp<br>
 <br>
 <MVC와 user 로그인&검증 시스템 구축><br>
 --03.07<br>
@@ -106,6 +109,9 @@ com.portfolio.registration.<br>
 //added jstl libraries and statements in review.jsp (review.jsp working as intended and userInfo.jsp will replace review.jsp to list only review items that belong to the signed-in user<br>
 --03.13<br>
 //added admin jsp page where all products and user information are displayed<br>
+--03.14<br>
+//added util_forProductInsert.jsp
+//added util_forProductDelete.jsp
 <br>
 🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸<br>
 <br>
@@ -126,6 +132,8 @@ com.portfolio.registration.<br>
 --03.10<br>
 //added table for brand (subject to changes)<br>
 //added table for review (subject to changes)<br>
+--03.14<br>
+//edit overall sql
 <br>
 🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸<br>
 <br>
