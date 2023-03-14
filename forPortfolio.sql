@@ -7,6 +7,7 @@ select @@global.time_zone; -- 시간대 확인
 
 -- user registration -- -- -- -- -- -- -- -- -- -- -- --
 
+delete from user;
 drop table user;
 
 create table user(
@@ -17,7 +18,7 @@ create table user(
     password varchar(15) default null,
     address varchar(50) default null,
     email varchar(50) default null,
-    phone varchar(12) default null,
+    phone varchar(11) default null,
     primary key (id)
     );
     
@@ -25,6 +26,7 @@ create table user(
 
 -- product table ---------------------------
 
+delete from product;
 drop table product;
 
 create table product(
@@ -40,6 +42,7 @@ select * from product;
 
 -- review table (기존) ----------------------------
 
+delete from review;
 drop table review;
 
 create table review(
@@ -53,6 +56,7 @@ select * from review;
 
 -- brand table -----------------------------
 
+delete from brand;
 drop table brand;
 
 create table brand(

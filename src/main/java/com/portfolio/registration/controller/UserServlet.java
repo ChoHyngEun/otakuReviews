@@ -30,7 +30,8 @@ public class UserServlet extends HttpServlet {
 
 	//Post 사용시
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+		
+		response.setContentType("text/html;charset=UTF-8");
 		//parameters 요청
 		String firstName = request.getParameter("firstName");
 		String lastName = request.getParameter("lastName");

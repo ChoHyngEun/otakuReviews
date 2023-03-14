@@ -32,6 +32,7 @@
 
 	<h1>Every Otaku's Reviews HERE</h1>
 	<i>hi</i><br><hr><br>
+	<a href="index.jsp"><img src = "images/otaku.jpg"></a>
 	
 	<!-- review item list 출력 table -->
 	<table border="1">

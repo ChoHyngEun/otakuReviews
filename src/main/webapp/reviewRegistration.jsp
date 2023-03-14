@@ -14,11 +14,12 @@
 	<i>leave a review on any product</i>
 	<i>show'em who the real boss is</i>
 	<br><hr><br>
+	<a href="index.jsp"><img src = "images/otaku.jpg"></a>
 	<!-- product 등록 후 ProductServlet으로 전송 -->
 	<form action="<%=request.getContextPath()%>/product" method="post">
 		Product Name: <input type="text" placeholder="Americano" name="product_name"><br><br>
 		Product Brand: <input type="text" placeholder="Starbucks" name="product_brand"><br><br>
-		Product Price(₩): <input type="text" placeholder="3000" name="product_price"><br><br>
+		Product Price($): <input type="text" placeholder="2.5" name="product_price"><br><br>
 		Your Comment: <textarea rows="10" placeholder="this shit dope as fuck bro..." name="product_review"></textarea><br><br>
 		<input type="submit" value="SUBMIT">
 	</form>

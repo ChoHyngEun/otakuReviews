@@ -23,6 +23,7 @@ import com.portfolio.registration.model.User;
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	
 	//LoginDAO object 생성
 	private LoginDAO loginDAO = new LoginDAO();
 	
@@ -32,9 +33,10 @@ public class LoginServlet extends HttpServlet {
 	
 	//POST방식 사용시.
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+		
 		//content type이 text/html에 반응하도록 지정
-		response.setContentType("text/html");
+		response.setContentType("text/html;charset=UTF-8");
+		
 		//for alert and more
 		PrintWriter out = response.getWriter();
 		//get session 객체
@@ -47,7 +49,6 @@ public class LoginServlet extends HttpServlet {
 		User user = new User();
 		user.setUserName(userName);
 		user.setPassword(password);
-		
 		
 		try {
 			

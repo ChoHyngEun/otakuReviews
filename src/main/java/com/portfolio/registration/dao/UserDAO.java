@@ -27,7 +27,7 @@ public class UserDAO {
 	
 		//connect to mySQL using jdbc url
 		try (Connection connection = DriverManager //"root"@"localhost"
-				.getConnection("jdbc:mysql://localhost:3306/portfolio?useSSL=false", "root", "Tkfkdgo450.");
+				.getConnection("jdbc:mysql://localhost:3306/portfolio?useSSL=false&useUnicode=true&characterEncoding=utf8", "root", "Tkfkdgo450.");
 				
 					//PreparedStatement 선언
 					PreparedStatement preparedStatement = connection.prepareStatement(insert_user)){

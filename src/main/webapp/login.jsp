@@ -11,6 +11,7 @@
 <div align=center>
 	<h1>I love you...</h1>
 	<i>please sign in... Imma be waiting for you on the other side...</i><br><hr><br><br>
+	<a href="index.jsp"><img src = "images/otaku.jpg"></a>
 	<!-- LoginServlet 서블릿에 로그인 정보를 전송함. 그 후 LoginServlet에서 validate 프로세스를 진행하여 data와 매치되는지 확인 -->
 	<form action="<%=request.getContextPath()%>/login" method="post">
 		User ID: <input type="text" name="userName"><br><br>

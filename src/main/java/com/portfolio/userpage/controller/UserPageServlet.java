@@ -47,15 +47,15 @@ public class UserPageServlet extends HttpServlet {
 		//ProductDAO의 listProducts 메소드 사용 위함
 		ProductDAO productDAO = new ProductDAO();
 		List<Product> list = productDAO.listProducts();
-		
+		out.print("<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css\">");
 		out.print("<html><body>");
 		out.print("<div align=center>");
-		out.print("<h1>환영합니다. 오타쿠들의 제왕 관리자님이시여.</h1>");
+		out.print("<h1>Admin Page</h1>");
 		out.print("</div>");
-		out.print("<h3>데이터베이스에 등록된 모든 리뷰 목록</h3>");
-		out.print("<table border=1><tr align='center' bgcolor='yellow'>");
-		out.print("<td>id</td><td>name</td><td>brand</td><td>price</td><td>review</td>");
-		
+		out.print("<h3>All Reviews</h3>");
+		out.println("<table class='table table-bordered table-dark'>");
+		out.println("<thead><tr><th scope='col'>id</th><th scope='col'>name</th><th scope='col'>brand</th><th scope='col'>price</th><th scope='col'>review</th></tr></thead>");
+		out.print("<tbody>");
 		for(int i=0;i<list.size();i++) {
 			Product product = list.get(i);
 			int id = product.getProduct_id();
@@ -63,8 +63,9 @@ public class UserPageServlet extends HttpServlet {
 			String brand = product.getProduct_brand();
 			float price = product.getProduct_price();
 			String review = product.getProduct_review();
-			out.print("<tr><td>"+id+"</td><td>"+name+"</td><td>"+brand+"</td><td>"+price+"</td><td>"+review+"</td></tr>");
+			out.print("<tr><th scope='row'>"+id+"</th><td>"+name+"</td><td>"+brand+"</td><td>"+price+"</td><td>"+review+"</td></tr>");
 		}
+		out.println("</tbody>");
 		out.print("</table><br><hr><br>");
 		//ProductDAO의 listProducts 부분 끝
 		
@@ -73,8 +74,8 @@ public class UserPageServlet extends HttpServlet {
 		List<User> list2 = userDAO.userInfoList();		
 
 //		out.print("<html><body>");
-		out.print("<h3>데이터베이스에 등록된 모든 유저 목록</h3>");
-		out.print("<table border=1><tr align='center' bgcolor='yellow'>");
+		out.print("<h3>All Users</h3>");
+		out.print("<table class='table table-borderless table-dark'><tr>");
 		out.print("<td>first name</td><td>last name</td><td>user ID</td><td>email</td><td>address</td><td>phone</td>");
 		
 		for(int i=0;i<list2.size();i++) {

@@ -24,6 +24,8 @@ public class ProductServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		response.setContentType("text/html;charset=UTF-8");
+		
 		//parameters 요청
 		String product_name = request.getParameter("product_name");
 		String product_brand = request.getParameter("product_brand");

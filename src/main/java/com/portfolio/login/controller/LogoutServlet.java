@@ -18,15 +18,21 @@ public class LogoutServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-
+		
+		response.setContentType("text/html;charset=UTF-8");
+		
 		PrintWriter out = response.getWriter();
-
-		response.setContentType("text/html");
 
 		//invalidating session을 위함
 		request.getSession(false).invalidate();
 
-		out.println("Good-bye, my Otaku...");
+		//alert 띄우기
+		out.println("<script type=\"text/javascript\">");
+		out.println("alert('Bye!');");
+		//index.jsp 재진입
+		out.println("location='index.jsp';");
+		out.println("</script>");
+		
 		out.close();
 		
 	}
