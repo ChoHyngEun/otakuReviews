@@ -17,25 +17,21 @@ public class UserServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     private UserDAO userdao = new UserDAO();
-    
-    public UserServlet() {
-        super();
-    }
 
     //Get 사용시
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-		
-		//forwarding을 위한 dispatcher (1/2)
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/ui/userRegistration.jsp");
-		dispatcher.forward(request, response);
-	}
+//	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//
+//		response.getWriter().append("Served at: ").append(request.getContextPath());
+//		
+//		//forwarding을 위한 dispatcher (1/2)
+//		RequestDispatcher dispatcher = request.getRequestDispatcher("userRegistration.jsp");
+//		dispatcher.forward(request, response);
+//	}
 
 	//Post 사용시
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		//request parameters
+		//parameters 요청
 		String firstName = request.getParameter("firstName");
 		String lastName = request.getParameter("lastName");
 		String userName = request.getParameter("userName");
@@ -44,6 +40,7 @@ public class UserServlet extends HttpServlet {
 		String email = request.getParameter("email");
 		String phone = request.getParameter("phone");
 		
+		//새 User 객체에 위 정보 저장
 		User user = new User();
 		user.setFirstName(firstName);
 		user.setLastName(lastName);
@@ -53,6 +50,7 @@ public class UserServlet extends HttpServlet {
 		user.setEmail(email);
 		user.setPhone(phone);
 		
+		//위 User 정보를 UserDAO의 registerUser 메소드를 사용해 sql에 정보 연동
 		try {
 			userdao.registerUser(user);
 		}catch(ClassNotFoundException e) {
@@ -62,7 +60,7 @@ public class UserServlet extends HttpServlet {
 		//userRegistration.jsp using method post.. 그래서 dispatcher 여기에 추가
 		//when doPost (submit), page will redirect to userInfo.jsp
 		//(2/2)
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/ui/userInfo.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("userInfo.jsp");
 		dispatcher.forward(request, response);
 		//redirect to where? 일단 보류
 //		response.sendRedirect("");

@@ -3,7 +3,11 @@ package com.portfolio.registration.dao;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.portfolio.registration.model.User;
 
@@ -23,7 +27,7 @@ public class UserDAO {
 	
 		//connect to mySQL using jdbc url
 		try (Connection connection = DriverManager //"root"@"localhost"
-				.getConnection("jdbc:mysql://localhost:3306/portfolio?useSSL=false", "root", "root");
+				.getConnection("jdbc:mysql://localhost:3306/portfolio?useSSL=false", "root", "Tkfkdgo450.");
 				
 					//PreparedStatement 선언
 					PreparedStatement preparedStatement = connection.prepareStatement(insert_user)){
@@ -49,4 +53,62 @@ public class UserDAO {
 		return result;
 		
 	}
+	/////////////////////////////////////////////////////////////////
+	
+		private Statement stmt;
+		private Connection con;
+		
+	//UserPageServlet에 사용될 userInfoList method (유저정보 리스트 출력용)
+		public List<User> userInfoList(){
+			
+			List<User> list2 = new ArrayList<User>();
+			
+			try {
+				Class.forName("com.mysql.cj.jdbc.Driver");
+				System.out.println("드라이버 로딩 성공");
+				con = DriverManager.getConnection("jdbc:mysql://localhost:3306/portfolio?useSSL=false", "root", "Tkfkdgo450.");
+				System.out.println("connected");
+				stmt = con.createStatement();
+				System.out.println("statement created");
+				
+			} catch(Exception e) {
+				e.printStackTrace();
+			}
+			
+			try {
+
+				String query = "select * from user";
+				System.out.println(query);
+				ResultSet rs = stmt.executeQuery(query);
+				
+				while(rs.next()) {
+					
+					String fname = rs.getString("first_name");
+					String lname = rs.getString("last_name");
+					String username = rs.getString("username");
+					String email = rs.getString("email");
+					String address = rs.getString("address");
+					String phone = rs.getString("phone");
+					
+					User user = new User();
+					
+					user.setFirstName(fname);
+					user.setLastName(lname);
+					user.setUserName(username);
+					user.setEmail(email);
+					user.setAddress(address);
+					user.setPhone(phone);
+					list2.add(user);
+				
+				}
+				
+				rs.close();
+				stmt.close();
+				con.close();
+					
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			return list2;
+		}
 }
