@@ -18,14 +18,14 @@
 목표: JSP, MySQL, SERVLET, MVC Pattern을 기반으로한 커피 등 상품에 관한 리뷰 웹 구축<br>
 <br>
 구성<br>
-1.회원가입 (데이터연동)<br>
-2.로그인(데이터연동, validation)<br>
-3.리뷰페이지(product 리뷰 등록)<br>
+1.<완> 회원가입 (데이터연동)<br>
+2.<완> 로그인(데이터연동, validation)<br>
+3.<완> 리뷰페이지(product 리뷰 등록)<br>
 4.마이페이지(정보 확인, 수정 가능 외 리뷰 내역 살펴보기)<br>
-~~5.기타(수정 및 추가 예정)<br>~~
-5.관리자 admin 로그인 구현 및 관리자용 jsp 페이지 구현 (모든 리뷰, 유저 리스트)<br>
-6.session 바인딩 로그인 로그아웃 구현<br>
+5.<완> 관리자 admin 로그인 구현 및 관리자용 jsp 페이지 구현 (모든 리뷰, 유저 리스트)<br>
+6.<완> session 바인딩 로그인 로그아웃 구현<br>
 7.(예정) 관리자 페이지 리뷰, 유저정보 수정 추가 삭제 구현<br>
+8.<진행중> product별 리뷰 상세페이지<
 <br>
 ![Alt Text](https://media.giphy.com/media/3o7TKDcovELwB2DM64/giphy.gif)<br>
 <br>
@@ -95,6 +95,8 @@ com.portfolio.registration.<br>
 //added Product.java (JavaBean)<br>
 //added ProductServlet.java (Servlet)<br>
 //added ProductDAO.java (DAO)<br>
+--03.14<br>
+//edit logout servlet<br>
 <br>
 <MVC와 product review 리스트 시스템 구축><br>
 --03.10<br>
@@ -140,6 +142,8 @@ com.portfolio.registration.<br>
 //added jstl core and jstl sql library and statements in review.jsp<br>
 --03.13<br>
 //updated css<br>
+--03.14<br>
+//added images folder<br>
 <br>
 🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸<br>
 <br>
