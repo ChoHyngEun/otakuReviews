@@ -23,6 +23,9 @@ public class ProductServlet extends HttpServlet {
     private ProductDAO productdao = new ProductDAO();
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset=UTF-8");
+		
 		
 		//parameters 요청
 		String product_name = request.getParameter("product_name");
