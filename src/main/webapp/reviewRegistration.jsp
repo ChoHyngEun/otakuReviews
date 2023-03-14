@@ -20,7 +20,8 @@
 		Product Name: <input type="text" placeholder="Americano" name="product_name"><br><br>
 		Product Brand: <input type="text" placeholder="Starbucks" name="product_brand"><br><br>
 		Product Price($): <input type="text" placeholder="2.5" name="product_price"><br><br>
-		Your Comment: <textarea rows="10" placeholder="this shit dope as fuck bro..." name="product_review"></textarea><br><br>
+		Your Comment:<br><br>
+		<textarea rows="10" placeholder="dope!" name="product_review"></textarea><br><br>
 		<input type="submit" value="SUBMIT">
 	</form>
 	</div>

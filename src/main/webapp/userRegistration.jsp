@@ -17,7 +17,7 @@
 	<form action="<%=request.getContextPath()%>/register" method="post">
 		First Name: <input type="text" placeholder="David" name="firstName"><br><br>
 		Last Name: <input type="text" placeholder="Kim" name="lastName"><br><br>
-		User ID: <input type="text" placeholder="user ID" name="userName"><br><br>
+		User ID: <input type="text" placeholder="userID" name="userName"><br><br>
 		Password: <input type="password" placeholder="password" name="password"><br><br>
 		Address: <input type="text" placeholder="833 East River Pkwy" name="address"><br><br>
 		Email: <input type="text" placeholder="otaku@gmail.com" name="email"><br><br>
