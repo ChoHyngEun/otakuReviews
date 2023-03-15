@@ -96,7 +96,6 @@ com.portfolio.registration.<br>
 --03.15<br>
 //admin login system final<br>
 //edited so that user needs only admin authen token to get an access to forAdmin.jsp (security)<br>
-
 <MVC와 product review 등록 시스템 구축><br>
 --03.10<br>
 //added Product.java (JavaBean)<br>
