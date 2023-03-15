@@ -17,8 +17,8 @@ public class ProductDAO {
 	public int registerProduct(Product product) throws ClassNotFoundException{
 		
 		//테이블에 product 등록하는 SQL statement
-		String insert_product = "insert into product" + "(product_name, product_brand, product_price, product_review) values "
-		+ "(?,?,?,?);";
+		String insert_product = "insert into product" + "(product_name, product_brand, product_price, star, product_review, userName) values "
+		+ "(?,?,?,?,?,?);";
 	
 		int result;
 		result = 0;
@@ -36,7 +36,10 @@ public class ProductDAO {
 					preparedStatement.setString(1, product.getProduct_name());
 					preparedStatement.setString(2, product.getProduct_brand());
 					preparedStatement.setFloat(3, product.getProduct_price());
-					preparedStatement.setString(4,  product.getProduct_review());
+					preparedStatement.setInt(4, product.getStar());
+					preparedStatement.setString(5,  product.getProduct_review());
+					preparedStatement.setString(6, product.getUserName());
+					
 					//see statement
 					System.out.println(preparedStatement);
 					//query execute
@@ -84,7 +87,11 @@ public class ProductDAO {
 				String name = rs.getString("product_name");
 				String brand = rs.getString("product_brand");
 				float price = rs.getFloat("product_price");
+				int star = rs.getInt("star");
 				String review = rs.getString("product_review");
+				String userName = rs.getString("userName");
+				
+				
 				
 				Product product = new Product();
 				
@@ -92,7 +99,10 @@ public class ProductDAO {
 				product.setProduct_name(name);
 				product.setProduct_brand(brand);
 				product.setProduct_price(price);
+				product.setStar(star);
 				product.setProduct_review(review);
+				product.setUserName(userName);
+				
 				list.add(product);
 			
 			}

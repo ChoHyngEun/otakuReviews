@@ -18,7 +18,7 @@
 
 <div id="wrap">
 
-<h1 id="title">Starbucks Coffee</h1>
+<h1 id="title">Paik's</h1>
 
 <div id="top">
 	<div class="pro_img1">
@@ -32,11 +32,11 @@
 	  </div>
 
 	<div class="pro_info">
-		<p>Brand Name : <a href="https://www.starbucks.co.kr/index.do">Starbucks</a></p>
+		<p>Brand Name : <a href="https://paikdabang.com">Paik's</a></p>
 		<p>Product Name : Americano</p>
 		<p>Option : HOT or ICE</p>
-		<p>Product price : ₩3,000</p>
-		<p>it's a bit bitter than another brand coffee shops</p>
+		<p>Product price : ₩2,000</p>
+		<p>not too bad for an everyday go-to coffee. tastes like coffee and not pricy at all</p>
 	</div>
 </div>
 
@@ -53,7 +53,7 @@
 
 <div id="bottom">
 	
-	<%@ include file="review.jsp" %>
+	<%@ include file="review_Paik.jsp" %>
 
 </div>
 

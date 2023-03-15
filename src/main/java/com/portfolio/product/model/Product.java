@@ -8,6 +8,8 @@ public class Product {
 	private String product_brand;
 	private float product_price;
 	private String product_review;
+	private int star;
+	private String userName;
 	
 	public int getProduct_id() {
 		return product_id;
@@ -38,6 +40,18 @@ public class Product {
 	}
 	public void setProduct_review(String product_review) {
 		this.product_review = product_review;
+	}
+	public int getStar() {
+		return star;
+	}
+	public void setStar(int star) {
+		this.star = star;
+	}
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 	
 }

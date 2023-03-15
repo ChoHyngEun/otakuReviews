@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Otaku Review World</title>
+<title>Otaku's Reviews</title>
 
 <link rel="icon" href="/favicon.png" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
@@ -30,9 +30,11 @@
 
 </head>
 <body>
+
 <%
 	String userName= (String)session.getAttribute("userName");  
-%>          		
+%>          	
+	
   <header>
    
     <div class="inner">
@@ -44,13 +46,18 @@
   		%>
 			<li>Welcome, <%=userName %></li>
 		<%
+    		}else{
+		%>
+			<li>Please sign in :)</li>
+		<%
     		}
 		%>
-        <li><a href="#" onclick="login()" id="loginButton">로그인</a></li>
-        <li><a href="#" onclick="logout()" id="logoutButton" style="display:none;">로그아웃</a></li>
-        <li><a href="#" onclick="register()" id="registerButton">회원가입</a></li>
-        <li><a href="#" onclick="reviewregister()" id="reviewRegistration">리뷰 등록</a></li>
-        <li><a href="#" onclick="reviewlist()" id="reviewButton">작성한 리뷰 확인하기</a></li>
+		
+        <li><a href="#" onclick="login()" id="loginButton">Login</a></li>
+        <li><a href="#" onclick="logout()" id="logoutButton" style="display:none;">Logout</a></li>
+        <li><a href="#" onclick="register()" id="registerButton">Sign-Up</a></li>
+        <li><a href="#" onclick="reviewregister()" id="reviewRegistration">Leave a Review</a></li>
+        <li><a href="#" onclick="myReviews()" id="reviewButton">My Reviews</a></li>
     </ul>
 
   <script type="text/javascript">
@@ -68,6 +75,18 @@
     }
     function reviewlist() {
         window.location.href = "review.jsp";
+    }
+    function myReviews(){
+    	window.location.href = "myReviews.jsp";
+    }
+    function reviewStarbucks(){
+    	window.location.href = "productInfo_Starbucks.jsp";
+    }
+    function reviewMega(){
+    	window.location.href = "productInfo_Mega.jsp";
+    }
+    function reviewPaik(){
+    	window.location.href = "productInfo_Paik.jsp";
     }
 
     // 로그인 상태 체크하여 버튼 보이기/숨기기
@@ -118,47 +137,49 @@
               </a>
             </li>
           </ul>
+          
         <div class="search">
           <input type="text" />
           <span class="material-icons">search</span>
         </div>
+        
       </div>
             <ul class="main-menu">
-            <li><a href="index.jsp" class="logo"><span>오타쿠의</span> <br>믿고보는 리뷰</a></li>
+            <li><a href="index.jsp" class="logo"><span>Otaku's</span> <br>Reviews</a></li>
+            
         <li class="item">
-          <div class="item__name">메뉴</div>
+          <div class="item__name">Menu</div>
           <div class="item__contents">
             <div class="contents__menu">
               <ul class="inner">
                 <li>
-                  <h4>브랜드</h4>
+                  <h4>Brands</h4>
                   <ul>
-                    <li><a href="http://localhost:8092/portfolio/pro_stb_info.jsp">스타벅스</a></li>
-                    <li><a href="http://localhost:8092/portfolio/pro_mega_info.jsp">메가커피</a></li>
-                    <li><a href="http://localhost:8092/portfolio/pro_paik_info.jsp">빽다방</a></li>
+                    <li><a href="https://www.starbucks.com" target="_blank">Starbucks</a></li>
+                    <li><a href="https://www.mega-mgccoffee.com" target="_blank">Mega Coffee</a></li>
+                    <li><a href="https://paikdabang.com" target="_blank">Paik's Coffee</a></li>
                   </ul>
                 </li>
                 <li>
-                  <h4>믿고보는리뷰</h4>
+                  <h4>Otaku Reviews</h4>
                   <ul>
-                    <li><a href="review.jsp">리뷰작성하기</a></li>
-                    <li><a href="#">내가작성한리뷰확인하기</a></li>
-                    <li><a href="#">실시간핫픽스 <span class="rhdtk">(공사중)</span></a></li>
+                    <li><a href="#" onClick="reviewregister()" id="reviewRegistration">Leave a Review</a></li>
+                    <li><a href="#" onClick="reviewStarbucks()">Starbucks Reviews</a></li>
+                    <li><a href="#" onClick="reviewMega()">Mega Reviews</a></li>
+                    <li><a href="#" onClick="reviewPaik()">Paik's Reviews</a>
+                  </ul>
+                </li>
+                
+                <li>
+                  <h4>Events</h4>
+                  <ul>
+                    <li><a href="underConstruction.jsp">Under Construction</a></li>
                   </ul>
                 </li>
                 <li>
-                  <h4>이벤트</h4>
+                  <h4>Otaku News</h4>
                   <ul>
-                    <li><a href="#">핫픽스 신뢰도 높은 후기!</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <h4>OTK 소식</h4>
-                  <ul>
-                    <li>커피 프레스</li>
-                    <li>푸어 오버</li>
-                    <li>아이스 푸어 오버</li>
-                    <li>커피 메이커</li>
+                    <li><a href="news.jsp">Notice</a></li>
                   </ul>
                 </li>
               </ul>
@@ -166,39 +187,78 @@
           </div>
         </li>
         <li class="item">
-          <div class="item__name">믿고보는리뷰</div>
+          <div class="item__name">Otaku Reviews</div>
           <div class="item__contents">
             <div class="contents__menu">
               <ul class="inner">
                 <li>
-                  <h4>브랜드</h4>
+                  <h4>Brands</h4>
                   <ul>
-                    <li><a href="#">스타벅스</a></li>
-                    <li><a href="#">메가커피</a></li>
-                    <li><a href="#">빽다방</a></li>
+                    <li><a href="https://www.starbucks.com" target="_blank">Starbucks</a></li>
+                    <li><a href="https://www.mega-mgccoffee.com" target="_blank">Mega Coffee</a></li>
+                    <li><a href="https://paikdabang.com" target="_blank">Paik's Coffee</a></li>
                   </ul>
                 </li>
                 <li>
-                  <h4>믿고보는리뷰</h4>
+                  <h4>Otaku Reviews</h4>
                   <ul>
-                    <li><a href="#">리뷰작성하기</a></li>
-                    <li><a href="#">내가작성한리뷰확인하기</a></li>
-                    <li><a href="#">실시간핫픽스 <span class="rhdtk">(공사중)</span></a></li>
+                    <li><a href="#" onClick="reviewregister()" id="reviewRegistration">Leave a Review</a></li>
+                    <li><a href="#" onClick="reviewStarbucks()">Starbucks Reviews</a></li>
+                    <li><a href="#" onClick="reviewMega()">Mega Reviews</a></li>
+                    <li><a href="#" onClick="reviewPaik()">Paik's Reviews</a>
+                  </ul>
+                </li>
+                
+                <li>
+                  <h4>Events</h4>
+                  <ul>
+                    <li><a href="underConstruction.jsp">Under Construction</a></li>
                   </ul>
                 </li>
                 <li>
-                  <h4>이벤트</h4>
+                  <h4>Otaku News</h4>
                   <ul>
-                    <li><a href="#">핫픽스 신뢰도 높은 후기!</a></li>
+                    <li><a href="news.jsp">Notice</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        
+        <li class="item">
+          <div class="item__name">Events</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>Brands</h4>
+                  <ul>
+                    <li><a href="https://www.starbucks.com" target="_blank">Starbucks</a></li>
+                    <li><a href="https://www.mega-mgccoffee.com" target="_blank">Mega Coffee</a></li>
+                    <li><a href="https://paikdabang.com" target="_blank">Paik's Coffee</a></li>
                   </ul>
                 </li>
                 <li>
-                  <h4>OTK 소식</h4>
+                  <h4>Otaku Reviews</h4>
                   <ul>
-                    <li>커피 프레스</li>
-                    <li>푸어 오버</li>
-                    <li>아이스 푸어 오버</li>
-                    <li>커피 메이커</li>
+                    <li><a href="#" onClick="reviewregister()" id="reviewRegistration">Leave a Review</a></li>
+                    <li><a href="#" onClick="reviewStarbucks()">Starbucks Reviews</a></li>
+                    <li><a href="#" onClick="reviewMega()">Mega Reviews</a></li>
+                    <li><a href="#" onClick="reviewPaik()">Paik's Reviews</a>
+                  </ul>
+                </li>
+                
+                <li>
+                  <h4>Events</h4>
+                  <ul>
+                    <li><a href="underConstruction.jsp">Under Construction</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Otaku News</h4>
+                  <ul>
+                    <li><a href="news.jsp">Notice</a></li>
                   </ul>
                 </li>
               </ul>
@@ -206,79 +266,38 @@
           </div>
         </li>
         <li class="item">
-          <div class="item__name">이벤트</div>
+          <div class="item__name">Otaku News</div>
           <div class="item__contents">
             <div class="contents__menu">
               <ul class="inner">
                 <li>
-                  <h4>브랜드</h4>
+                  <h4>Brands</h4>
                   <ul>
-                    <li><a href="#">스타벅스</a></li>
-                    <li><a href="#">메가커피</a></li>
-                    <li><a href="#">빽다방</a></li>
+                    <li><a href="https://www.starbucks.com" target="_blank">Starbucks</a></li>
+                    <li><a href="https://www.mega-mgccoffee.com" target="_blank">Mega Coffee</a></li>
+                    <li><a href="https://paikdabang.com" target="_blank">Paik's Coffee</a></li>
                   </ul>
                 </li>
                 <li>
-                  <h4>믿고보는리뷰</h4>
+                  <h4>Otaku Reviews</h4>
                   <ul>
-                    <li><a href="#">리뷰작성하기</a></li>
-                    <li><a href="#">내가작성한리뷰확인하기</a></li>
-                    <li><a href="#">실시간핫픽스 <span class="rhdtk">(공사중)</span></a></li>
+                    <li><a href="#" onClick="reviewregister()" id="reviewRegistration">Leave a Review</a></li>
+                    <li><a href="#" onClick="reviewStarbucks()">Starbucks Reviews</a></li>
+                    <li><a href="#" onClick="reviewMega()">Mega Reviews</a></li>
+                    <li><a href="#" onClick="reviewPaik()">Paik's Reviews</a>
+                  </ul>
+                </li>
+                
+                <li>
+                  <h4>Events</h4>
+                  <ul>
+                    <li><a href="underConstruction.jsp">Under Construction</a></li>
                   </ul>
                 </li>
                 <li>
-                  <h4>이벤트</h4>
+                  <h4>Otaku News</h4>
                   <ul>
-                    <li><a href="#">핫픽스 신뢰도 높은 후기!</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <h4>OTK 소식</h4>
-                  <ul>
-                    <li>커피 프레스</li>
-                    <li>푸어 오버</li>
-                    <li>아이스 푸어 오버</li>
-                    <li>커피 메이커</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </li>
-        <li class="item">
-          <div class="item__name">OTK소식</div>
-          <div class="item__contents">
-            <div class="contents__menu">
-              <ul class="inner">
-                <li>
-                  <h4>브랜드</h4>
-                  <ul>
-                    <li><a href="#">스타벅스</a></li>
-                    <li><a href="#">메가커피</a></li>
-                    <li><a href="#">빽다방</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <h4>믿고보는리뷰</h4>
-                  <ul>
-                    <li><a href="#">리뷰작성하기</a></li>
-                    <li><a href="#">내가작성한리뷰확인하기</a></li>
-                    <li><a href="#">실시간핫픽스 <span class="rhdtk">(공사중)</span></a></li>
-                  </ul>
-                </li>
-                <li>
-                  <h4>이벤트</h4>
-                  <ul>
-                    <li><a href="#">핫픽스 신뢰도 높은 후기!</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <h4>OTK 소식</h4>
-                  <ul>
-                    <li>커피 프레스</li>
-                    <li>푸어 오버</li>
-                    <li>아이스 푸어 오버</li>
-                    <li>커피 메이커</li>
+                    <li><a href="news.jsp">Notice</a></li>
                   </ul>
                 </li>
               </ul>
@@ -326,8 +345,8 @@
 
         <div class="inner__left">
           
-              <div class="swiper-slide"><h2>공지사항</h2>
-                <a href="javascript:void(0)"> 공휴일간 고객센터 휴무 예정</a>
+              <div class="swiper-slide"><h2>Announcements</h2>
+                <a href="javascript:void(0)">Customer Service Center Not Reachable on Weekends</a>
               </div>
       
           <a href="javascript:void(0)" class="notice-line__more">
@@ -341,32 +360,32 @@
       
       <div class="swiper-container">
         <div class ="p_title">
-          <h2>MENU</h2>
+          <h2>Menu</h2>
         </div>
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="https://img.79plus.co.kr/megahp/manager/upload/menu/20220630162318_1656573798017_43JQ0t0JCi.jpg" alt="2023 뜨거운 여름을 물량으로 날려버릴 메가리카노!" />
-            <a href="javascript:void(0)" class="btn" onclick="btn_mega()">자세히 보기</a>
+            <a href="javascript:void(0)" class="btn" onclick="btn_mega()">More Info</a>
           </div>
           <div class="swiper-slide">
             <img src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[110563]_20210426095937808.jpg" alt="2023 스타벅스만의 트렌디한 계절 여러분을 초대합니다!" />
-            <a href="javascript:void(0)" class="btn" onclick="btn_stb()">자세히 보기</a>
+            <a href="javascript:void(0)" class="btn" onclick="btn_stb()">More Info</a>
           </div>
           <div class="swiper-slide">
             <img src="https://paikdabang.com/wp-content/uploads/2018/05/ICED-%EB%8B%AC%EB%8B%AC%EC%97%B0%EC%9C%A0%EB%9D%BC%EB%96%BC_-450x588.png" alt="아휴 나몰라유? 나유 나! 맛의 대부 Baek이 추천하는 연유라떼!" />
-            <a href="javascript:void(0)" class="btn" onclick="btn_paik()">자세히 보기</a>
+            <a href="javascript:void(0)" class="btn" onclick="btn_paik()">More Info</a>
           </div>
           <div class="swiper-slide">
             <img src="https://img.79plus.co.kr/megahp/manager/upload/menu/20220630162318_1656573798017_43JQ0t0JCi.jpg" alt="2023 뜨거운 여름을 물량으로 날려버릴 메가리카노!" />
-            <a href="javascript:void(0)" class="btn" onclick="btn_mega()">자세히 보기</a>
+            <a href="javascript:void(0)" class="btn" onclick="btn_mega()">More Info</a>
           </div>
           <div class="swiper-slide">
             <img src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[110563]_20210426095937808.jpg" alt="2023 스타벅스만의 트렌디한 계절 여러분을 초대합니다!" />
-            <a href="javascript:void(0)" class="btn" onclick="btn_stb()">자세히 보기</a>
+            <a href="javascript:void(0)" class="btn" onclick="btn_stb()">More Info</a>
           </div>
           <div class="swiper-slide">
             <img src="https://paikdabang.com/wp-content/uploads/2018/05/ICED-%EB%8B%AC%EB%8B%AC%EC%97%B0%EC%9C%A0%EB%9D%BC%EB%96%BC_-450x588.png" alt="아휴 나몰라유? 나유 나! 맛의 대부 Baek이 추천하는 연유라떼!" />
-            <a href="javascript:void(0)" class="btn" onclick="btn_paik()">자세히 보기</a>
+            <a href="javascript:void(0)" class="btn" onclick="btn_paik()">More Info</a>
           </div>
           <!-- <div class="swiper-slide">
             <img src="	https://www.ediya.com/images/coffee/lab_menu_gallery01.jpg" alt="신년 이디야의 다양한 이벤트들로 여러분들을 초대합니다!" />
@@ -374,13 +393,13 @@
           </div> -->
           <script type="text/javascript">
             function btn_mega() {
-                window.location.href = "/portfolio/pro_mega_info.jsp";
+                window.location.href = "/portfolio/productInfo_Mega.jsp";
             }
             function btn_stb() {
-                window.location.href = "/portfolio/pro_stb_info.jsp";
+                window.location.href = "/portfolio/productInfo_Starbucks.jsp";
             }
             function btn_paik() {
-                window.location.href = "/portfolio/pro_paik_info.jsp";
+                window.location.href = "/portfolio/productInfo_Paik.jsp";
             }
             function btn_edi() {
                 window.location.href = "reviewRegistration.jsp";
@@ -409,7 +428,7 @@
       </ul>
 
       <div class="btn-group">
-        <a href="javascript:void(0)" class="btn btn--white">김종민</a>
+        <a href="https://github.com/javaLearner13" target="_blank" class="btn btn--white">Owen Kim</a>
         <a href="javascript:void(0)" class="btn btn--white">손하연</a>
         <a href="javascript:void(0)" class="btn btn--white">조형은</a>
       </div>

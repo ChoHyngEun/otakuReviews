@@ -2,6 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %>
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,6 +10,39 @@
 <title>Admin Page</title>
 </head>
 <body>
+
+<%
+	boolean statusCheck = false;
+%>
+	
+<%
+	String userName = (String)session.getAttribute("userName");
+	String password = (String)session.getAttribute("password");
+%>
+	<!-- see if user is admin -->
+<%
+	if(userName.equals("admin")&&password.equals("Tkfkdgo450.")){
+		statusCheck = true;
+	}else{
+		statusCheck = false;
+	}
+%>
+
+	<%
+	/* if not signed in, send em back to index.jsp */
+	if(!statusCheck){
+		%>
+		
+		<script>
+			alert("Warning! No Admin Authen Token");
+			history.back();
+		</script>
+		
+		<%
+	}
+	
+	%>
+	
 	<div align=center>
 	<h1>Welcome, Admin.</h1>
 	<h2>======================================== User ======================================</h2>

@@ -12,7 +12,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>All Reviews</title>
+<title>Mega Coffee Reviews</title>
 </head>
 <body>
 
@@ -26,7 +26,7 @@
     
     <!-- jstl:sql query 선언 -->
     <sql:query var="resultSet" dataSource="${dataSource}">
-        select * from product;
+        select * from product where product_brand = 'Mega';
     </sql:query>
     
 <div align=center>

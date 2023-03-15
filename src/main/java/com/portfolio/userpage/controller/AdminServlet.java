@@ -41,11 +41,17 @@ public class AdminServlet extends HttpServlet {
 
 	private void doHandle(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		//get session 객체
+		HttpSession session = request.getSession(true);
+		String userName= (String)session.getAttribute("userName"); 
+		String password= (String)session.getAttribute("password");
+		
 		response.setContentType("text/html;charset=utf-8");
-		PrintWriter out = response.getWriter();
+		
 		//ProductDAO의 listProducts 메소드 사용 위함
 		ProductDAO productDAO = new ProductDAO();
 		List<Product> list = productDAO.listProducts();
+		PrintWriter out = response.getWriter();
 		
 		out.print("<!DOCTYPE html>\r\n"
 				+ "<html lang=\"en\">\r\n"

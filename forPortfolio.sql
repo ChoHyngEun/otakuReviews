@@ -19,7 +19,8 @@ create table user(
     address varchar(50) default null,
     email varchar(50) default null,
     phone varchar(15) default null,
-    primary key (id)
+    primary key (id),
+    unique key (username)
     );
     
 	insert into user values(1, 'admin', 'admin', 'admin', 'Tkfkdgo450.', '833 E River Pkwy', 'admin@otakuReviews.com', '01012345678');
@@ -36,39 +37,13 @@ create table product(
     product_name varchar(30) not null,
     product_brand varchar(30) not null,
     product_price float not null,
-    product_review varchar(500) not null,
+    star int not null,
+    product_review varchar(500) default null,
+    username varchar(20) default null,
     -- product_img varchar(300) default null
-    primary key (product_id)
+    primary key (product_id),
+    foreign key (username) references user (username)
 );
 
 alter table product auto_increment=1;
 select * from product;
-
--- review table (기존) ----------------------------
-
-delete from review;
-drop table review;
-
-create table review(
-	review_id mediumint not null auto_increment primary key,
-    content varchar(500) not null,
-    product_id mediumint not null,
-    username varchar(15) not null
-);
-
-select * from review;
-alter table review auto_increment=1;
-
--- brand table -----------------------------
-
-delete from brand;
-drop table brand;
-
-create table brand(
-	brand_id mediumint not null auto_increment,
-    brand_name varchar(30) default null,
-    primary key(brand_id)
-);
-
-select * from brand;
-alter table brand auto_increment=1;
