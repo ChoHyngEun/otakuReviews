@@ -45,6 +45,9 @@
 	
 	<div align=center>
 	<h1>Welcome, Admin.</h1>
+	<i><b>WARNING</b></i><br>
+	<i>This page is built upon queries using 'on delete cascade & on update cascade'<br>
+	So, if you remove a user, all their reviews will be gone as well.</i>
 	<h2>======================================== User ======================================</h2>
 	<!-- select User sql query -->
 	<sql:setDataSource var="dataSource"
@@ -123,11 +126,13 @@
 	<!-- product insert form -->
 	<!-- send data to util_forProductInsert.jsp so the jsp can process the data -->
 	<form method="post" action="util_forProductInsert.jsp">
-		<p> product_name : <input type="text" placeholder="Americano" name="product_name"> </p>
-		<p> product_brand : <input type="text" placeholder="Starbucks" name="product_brand"> </p>
-		<p> product_price : <input type="text" placeholder="3.5" name="product_price"> </p>
-		<p> product_review</p>
+		<p> product name : <input type="text" placeholder="Americano" name="product_name"> </p>
+		<p> product brand : <input type="text" placeholder="Starbucks" name="product_brand"> </p>
+		<p> product price : <input type="text" placeholder="3.5" name="product_price"> </p>
+		<p> ratings : <input type="text" placeholder="integers (1 to 5)" name="star"></p>
+		<p> product review</p>
 		<textarea rows="10" placeholder="dope!" name="product_review"></textarea>
+		<p> username : <input type="text" placeholder="admin" name="userName"></p>
 		<p> <input type="submit" value="Add">
 	</form>
 	

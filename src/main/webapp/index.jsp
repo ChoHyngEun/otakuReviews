@@ -32,7 +32,7 @@
 <body>
 
 <%
-	String userName= (String)session.getAttribute("userName");  
+	String userName = (String)session.getAttribute("userName");
 %>          	
 	
   <header>
@@ -41,6 +41,7 @@
 
 <div class="sub-menu">
     <ul class="menu">
+    
     	<% 
   			if (userName != null) {
   		%>
@@ -57,7 +58,8 @@
         <li><a href="#" onclick="logout()" id="logoutButton" style="display:none;">Logout</a></li>
         <li><a href="#" onclick="register()" id="registerButton">Sign-Up</a></li>
         <li><a href="#" onclick="reviewregister()" id="reviewRegistration">Leave a Review</a></li>
-        <li><a href="#" onclick="myReviews()" id="reviewButton">My Reviews</a></li>
+        <li><a href="#" onclick="myReviews()" id="reviewButton">Me</a></li>
+        <li><a href="#" onclick="goToAdmin()" id="goToAdmin">Admin Page</a></li>
     </ul>
 
   <script type="text/javascript">
@@ -88,6 +90,9 @@
     function reviewPaik(){
     	window.location.href = "productInfo_Paik.jsp";
     }
+    function goToAdmin(){
+    	window.location.href = "forAdmin.jsp";
+    }
 
     // 로그인 상태 체크하여 버튼 보이기/숨기기
     <% 
@@ -97,20 +102,36 @@
         document.getElementById('loginButton').style.display = 'none'; // 로그인 버튼 숨기기
         document.getElementById('logoutButton').style.display = 'block';//로그아웃 버튼 보이기
         document.getElementById('registerButton').style.display = 'none';// 회원가입 버튼 숨기기
-        document.getElementById('reviewRegistration').style.display = 'block';//리뷰작성버튼
-        document.getElementById('reviewButton').style.display = 'block';// 작성한리뷰확인버튼
-    <% 
-        } else { // 로그인 상태가 아닌 경우
-    %>
+        document.getElementById('reviewRegistration').style.display = 'block';//리뷰작성버튼 보이기
+      
+        <%
+        	if(userName.equals("admin")){
+        %>
+      	//관리자 보이기
+        document.getElementById('goToAdmin').style.display = 'block';
+        <%
+        	}else{
+        %>
+        //관리자 숨기기
+        document.getElementById('goToAdmin').style.display = 'none';
+        <%
+        	}
+        %>
+        document.getElementById('reviewButton').style.display = 'block';// 리뷰 및 내 정보 버튼 보이기
+    	<% 
+    	 // 로그인 상태가 아닌 경우
+        }else {
+    	%>
         document.getElementById('loginButton').style.display = 'block'; // 로그인 버튼 보이기
         document.getElementById('logoutButton').style.display = 'none'; // 로그아웃 버튼 숨기기
         document.getElementById('registerButton').style.display = 'block';// 회원가입 버튼 보이기
-        document.getElementById('reviewRegistration').style.display = 'none';//리뷰작성버튼
-        document.getElementById('reviewButton').style.display = 'none';// 작성한리뷰확인버튼
-    <% 
-        } 
-    %>
-
+        document.getElementById('reviewRegistration').style.display = 'none';//리뷰작성버튼 숨기기
+        document.getElementById('goToAdmin').style.display = 'none'; //관리자 숨기기
+        document.getElementById('reviewButton').style.display = 'none';// 리뷰 및 내 정보 버튼 숨기기
+    	
+    	<%
+        }
+    	%>
 
     </script>
 
@@ -393,13 +414,13 @@
           </div> -->
           <script type="text/javascript">
             function btn_mega() {
-                window.location.href = "/portfolio/productInfo_Mega.jsp";
+                window.location.href = "productInfo_Mega.jsp";
             }
             function btn_stb() {
-                window.location.href = "/portfolio/productInfo_Starbucks.jsp";
+                window.location.href = "productInfo_Starbucks.jsp";
             }
             function btn_paik() {
-                window.location.href = "/portfolio/productInfo_Paik.jsp";
+                window.location.href = "productInfo_Paik.jsp";
             }
             function btn_edi() {
                 window.location.href = "reviewRegistration.jsp";

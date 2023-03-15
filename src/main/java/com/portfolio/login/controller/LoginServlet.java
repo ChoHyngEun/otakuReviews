@@ -36,7 +36,6 @@ public class LoginServlet extends HttpServlet {
 		
 		//content type이 text/html에 반응하도록 지정
 		response.setContentType("text/html;charset=UTF-8");
-		
 		//for alert and more
 		PrintWriter out = response.getWriter();
 		//get session 객체
@@ -45,8 +44,10 @@ public class LoginServlet extends HttpServlet {
 		// validation.. 로그인정보 비교를 위한 객체 생성
 		String userName = request.getParameter("userName");
 		String password = request.getParameter("password");
+
 		session.setAttribute("userName", userName);
 		session.setAttribute("password", password);
+
 		User user = new User();
 		user.setUserName(userName);
 		user.setPassword(password);
@@ -59,13 +60,11 @@ public class LoginServlet extends HttpServlet {
 				session.setAttribute(userName, user);
 				//로그인한 유저의 password를 password에 세션 바인딩시킴
 				session.setAttribute(password, password);
-				
 				//로그인 유저가 admin일 경우
 				if(userName.equals("admin")&&password.equals("Tkfkdgo450.")) {
 					//admin을 관리자 페이지로 redirect
 					response.sendRedirect("dXireRpIIlQxXiA_3lIo7?id="+userName);
 				}else {
-					
 					//redirecting 시키면서 userName도 주소창에 표시
 					response.sendRedirect("index.jsp?id="+userName);
 				}

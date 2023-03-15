@@ -65,8 +65,8 @@ public class AdminServlet extends HttpServlet {
 		out.print("<body>");
 		out.print("<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\" crossorigin=\"anonymous\"></script>");
 		out.print("<div align=center>");
-		out.print("<a href='forAdmin.jsp'><h2>Edit</h2></a>");
-		out.print("<h1>Admin Page</h1>");
+		out.print("<br>");
+		out.print("<h2>Go to <a href='forAdmin.jsp'>Edit</a></h2>");
 		out.print("</div>");
 		
 		out.print("<h3>All Reviews</h3>");

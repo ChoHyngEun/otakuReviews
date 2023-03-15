@@ -1,6 +1,12 @@
 package com.portfolio.registration.controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -8,6 +14,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.portfolio.registration.dao.UserDAO;
 import com.portfolio.registration.model.User;
@@ -32,6 +39,7 @@ public class UserServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		response.setContentType("text/html;charset=UTF-8");
+		
 		//parameters 요청
 		String firstName = request.getParameter("firstName");
 		String lastName = request.getParameter("lastName");
@@ -50,10 +58,11 @@ public class UserServlet extends HttpServlet {
 		user.setAddress(address);
 		user.setEmail(email);
 		user.setPhone(phone);
-		
-		//위 User 정보를 UserDAO의 registerUser 메소드를 사용해 sql에 정보 연동
+
 		try {
-			userdao.registerUser(user);
+				//User 정보를 UserDAO의 registerUser 메소드를 사용해 sql에 정보 연동
+				userdao.registerUser(user);
+				
 		}catch(ClassNotFoundException e) {
 			e.printStackTrace();
 		}

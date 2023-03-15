@@ -19,7 +19,9 @@
 		String product_name = request.getParameter("product_name");
 		String product_brand = request.getParameter("product_brand");
 		float product_price = Float.parseFloat(request.getParameter("product_price"));
+		int star = Integer.parseInt(request.getParameter("star"));
 		String product_review = request.getParameter("product_review");
+		String userName = request.getParameter("userName");
 		
 	%>
 	
@@ -30,12 +32,13 @@
 		driver="com.mysql.jdbc.Driver" user="root" password="Tkfkdgo450." />
 		
 	<sql:update dataSource="${dataSource}" var="resultSet">
-		Insert into product(product_name, product_brand, product_price, product_review) values (?,?,?,?);
+		Insert into product(product_name, product_brand, product_price, star, product_review, userName) values (?,?,?,?,?,?);
 		<sql:param value="<%= product_name %>" />
 		<sql:param value="<%= product_brand %>" />
 		<sql:param value="<%= product_price %>" />
+		<sql:param value="<%= star %>"/>
 		<sql:param value="<%= product_review %>" />
-
+		<sql:param value="<%= userName %>"/>
 	</sql:update>
 	
 	<!-- Admin Page로 재이동 -->

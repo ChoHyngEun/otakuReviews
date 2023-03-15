@@ -32,7 +32,7 @@
     </div>
     <div class="user-box">
       <input type="password" placeholder="password" name="password">
-      <label>PassWord</label>
+      <label>Password</label>
     </div>
     <div class="user-box">
       <input type="text" placeholder="833 East River Pkwy" name="address">

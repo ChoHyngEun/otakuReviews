@@ -43,6 +43,8 @@ create table product(
     -- product_img varchar(300) default null
     primary key (product_id),
     foreign key (username) references user (username)
+    ON DELETE CASCADE
+	ON UPDATE CASCADE
 );
 
 alter table product auto_increment=1;

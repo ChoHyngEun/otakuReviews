@@ -13,22 +13,20 @@ import com.portfolio.registration.model.User;
 
 //Dao for User
 public class UserDAO {
-	//passing user object
+	
 	public int registerUser(User user) throws ClassNotFoundException{
+
 		//테이블에 유저 등록 SQL statement 추가. id 는 제외 (auto_increment 사용)
 		String insert_user = "insert into user" + "(first_name, last_name, username, password, address, email, phone) values "
 		+ "(?,?,?,?,?,?,?);";
 	
 		int result;
 		result = 0;
-		
-		//mysql connector 버전에 따라 ..mysql.jdbc.. 를 사용해야 할 수 있음.
-		Class.forName("com.mysql.cj.jdbc.Driver");
-	
+
 		//connect to mySQL using jdbc url
 		try (Connection connection = DriverManager //"root"@"localhost"
 				.getConnection("jdbc:mysql://localhost:3306/portfolio?useSSL=false&useUnicode=true&characterEncoding=utf8", "root", "Tkfkdgo450.");
-				
+
 					//PreparedStatement 선언
 					PreparedStatement preparedStatement = connection.prepareStatement(insert_user)){
 					//id 제외
@@ -55,8 +53,8 @@ public class UserDAO {
 	}
 	/////////////////////////////////////////////////////////////////
 	
-		private Statement stmt;
-		private Connection con;
+	private Statement stmt;
+	private Connection con;
 		
 	//UserPageServlet에 사용될 userInfoList method (유저정보 리스트 출력용)
 		public List<User> userInfoList(){
