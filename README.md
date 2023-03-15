@@ -89,10 +89,14 @@ com.portfolio.registration.<br>
 //added admin login system<br>
 <br>
 --03.13<br>
-//deleted index.html
-//added index.jsp
-//completed login session binding system
-//edited index.jsp so that some features are hidden for signed-in users such as "회원가입" and "로그인"
+//deleted index.html<br>
+//added index.jsp<br>
+//completed login session binding system<br>
+//edited index.jsp so that some features are hidden for signed-in users such as "회원가입" and "로그인"<br>
+--03.15<br>
+//admin login system final<br>
+//edited so that user needs only admin authen token to get an access to forAdmin.jsp (security)<br>
+
 <MVC와 product review 등록 시스템 구축><br>
 --03.10<br>
 //added Product.java (JavaBean)<br>
@@ -133,7 +137,9 @@ com.portfolio.registration.<br>
 //added table for brand (subject to changes)<br>
 //added table for review (subject to changes)<br>
 --03.14<br>
-//edit overall sql
+//edit overall sql<br>
+--03.15<br>
+//MySQL final edit<br>
 <br>
 🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸<br>
 <br>
