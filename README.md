@@ -21,11 +21,11 @@
 1.<완> 회원가입 (데이터연동)<br>
 2.<완> 로그인(데이터연동, validation)<br>
 3.<완> 리뷰페이지(product 리뷰 등록)<br>
-4.마이페이지(정보 확인, 수정 가능 외 리뷰 내역 살펴보기)<br>
+4.<완>마이페이지(정보 확인, 수정 가능 외 리뷰 내역 살펴보기)<br>
 5.<완> 관리자 admin 로그인 구현 및 관리자용 jsp 페이지 구현 (모든 리뷰, 유저 리스트)<br>
 6.<완> session 바인딩 로그인 로그아웃 구현<br>
-7.(예정) 관리자 페이지 리뷰, 유저정보 수정 추가 삭제 구현<br>
-8.<진행중> product별 리뷰 상세페이지<br>
+7.<완> 관리자 페이지 리뷰, 유저정보 수정 추가 삭제 구현<br>
+8.<완> product별 리뷰 상세페이지<br>
 <br>
 ![Alt Text](https://media.giphy.com/media/3o7TKDcovELwB2DM64/giphy.gif)<br>
 <br>
@@ -89,10 +89,13 @@ com.portfolio.registration.<br>
 //added admin login system<br>
 <br>
 --03.13<br>
-//deleted index.html
-//added index.jsp
-//completed login session binding system
-//edited index.jsp so that some features are hidden for signed-in users such as "회원가입" and "로그인"
+//deleted index.html<br>
+//added index.jsp<br>
+//completed login session binding system<br>
+//edited index.jsp so that some features are hidden for signed-in users such as "회원가입" and "로그인"<br>
+--03.15<br>
+//admin login system final<br>
+//edited so that user needs only admin authen token to get an access to forAdmin.jsp (security)<br>
 <MVC와 product review 등록 시스템 구축><br>
 --03.10<br>
 //added Product.java (JavaBean)<br>
@@ -133,7 +136,9 @@ com.portfolio.registration.<br>
 //added table for brand (subject to changes)<br>
 //added table for review (subject to changes)<br>
 --03.14<br>
-//edit overall sql
+//edit overall sql<br>
+--03.15<br>
+//MySQL final edit<br>
 <br>
 🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸<br>
 <br>
@@ -157,6 +162,9 @@ com.portfolio.registration.<br>
 //added userinfo.css<br>
 //added main.js<br>
 //added youtube.js<br>
+--03.15<br>
+//edited myreview page to ME (my information and review history) page<br>
+//added admin page show&hide<br>
 <br>
 🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸<br>
 <br>
