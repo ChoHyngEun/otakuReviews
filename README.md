@@ -26,6 +26,7 @@
 6.<완> session 바인딩 로그인 로그아웃 구현<br>
 7.<완> 관리자 페이지 리뷰, 유저정보 수정 추가 삭제 구현<br>
 8.<완> product별 리뷰 상세페이지<br>
+9.<완> 회원가입시 중복된 user ID 입력시 회원가입이 안되도록 구현<
 <br>
 ![Alt Text](https://media.giphy.com/media/3o7TKDcovELwB2DM64/giphy.gif)<br>
 <br>
@@ -72,6 +73,8 @@ com.portfolio.registration.<br>
 --03.14<br>
 //added util_forUserInsert.jsp<br>
 //added util_forUserDelete.jsp<br>
+--03.15<br>
+//edited UserServlet (중복 ID 회원가입 제한)<br>
 <br>
 <MVC와 user 로그인&검증 시스템 구축><br>
 --03.07<br>
