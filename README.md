@@ -162,6 +162,9 @@ com.portfolio.registration.<br>
 //added userinfo.css<br>
 //added main.js<br>
 //added youtube.js<br>
+--03.15<br>
+//edited myreview page to ME (my information and review history) page<br>
+//added admin page show&hide<br>
 <br>
 🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸<br>
 <br>
