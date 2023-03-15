@@ -27,6 +27,7 @@
 7.<완> 관리자 페이지 리뷰, 유저정보 수정 추가 삭제 구현<br>
 8.<완> product별 리뷰 상세페이지<br>
 9.<완> 회원가입시 중복된 user ID 입력시 회원가입이 안되도록 구현<br>
+10.<미완성> ID 중복확인 버튼 구현 (현재는 유저가 정보 입력후 submit 버튼을 눌러야만 id가 중복되는지 확인 가능한 시스템)<br>
 <br>
 ![Alt Text](https://media.giphy.com/media/3o7TKDcovELwB2DM64/giphy.gif)<br>
 <br>
