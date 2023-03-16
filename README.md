@@ -239,6 +239,8 @@ com.portfolio.registration.<br>
 --03.15<br>
 //edited myreview page to ME (my information and review history) page<br>
 //added admin page show&hide<br>
+--03.16<br>
+//added _kor jsp files so translation feature works<br>
 <br>
 🌸🌸🌸🌸🌸🌸🌸🌸🌸🌸<br>
 <br>
