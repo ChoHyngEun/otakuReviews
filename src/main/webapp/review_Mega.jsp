@@ -27,12 +27,9 @@
     
     <!-- jstl:sql query 선언 -->
     <sql:query var="resultSet" dataSource="${dataSource}">
-        SELECT product_id AS `ReveiwId`, product_name AS `Product`, product_brand as `Brand`, product_price as `Price`, star as `Ratings`, product_review as `Content`, username as `Author` FROM product;
+        select * from product where product_brand = 'Mega';
     </sql:query>
     
-    <%-- ResultSetMetaData 객체 가져오기 --%>
-	<c:set var="metaData" value="${var.resultSet.metaData}" />
-	<c:set var="metaData" value="${result.metaData}" />
 <div align=center>
 
 	<!-- review item list 출력 table -->
@@ -42,11 +39,10 @@
             <button type="button" onclick="location.href='reviewRegistration.jsp'">add</button>
         </div>    
             <!-- th 자동 출력 -->
-            <tr>
-			    <%-- 컬럼명 출력 --%>
-			    <c:forEach var="i" begin="1" end="${metaData.columnCount}">
-			        <th><c:out value="${metaData.getColumnLabel(i)}" /></th>
-			    </c:forEach>
+            <tr class="title">
+				<c:forEach var="columnName" items="${resultSet.columnNames}" >
+					<th width="100"><c:out value="${columnName}" /></th>
+				</c:forEach>
 			</tr>
 		
 		<!-- td row 자동 선언 -->

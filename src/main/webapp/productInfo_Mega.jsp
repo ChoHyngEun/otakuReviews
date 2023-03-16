@@ -22,8 +22,8 @@
 
 	<div id="top">
 		<div class="pro_img1">
-			<img src="images/hot_americano.jpg" width="500px" height="500px">
-			<img src="images/ice_americano.jpg" width="500px" height="500px">
+			<img src="images/mega1.jpg" width="500px" height="500px">
+			<img src="images/mega2.jpg" width="500px" height="500px">
 			
 			<p class="controller1">
 				<span class="prev1">&lang;</span>

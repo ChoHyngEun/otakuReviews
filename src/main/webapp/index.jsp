@@ -451,8 +451,8 @@
 
       <div class="btn-group">
         <a href="https://github.com/javaLearner13" target="_blank" class="btn btn--white">Owen Kim</a>
-        <a href="javascript:void(0)" class="btn btn--white">손하연</a>
-        <a href="javascript:void(0)" class="btn btn--white">조형은</a>
+        <a href="https://github.com/sonhayoni" target="_blank" class="btn btn--white">손하연</a>
+        <a href="https://github.com/chohyungeun" target="_blank" class="btn btn--white">조형은</a>
       </div>
 
 

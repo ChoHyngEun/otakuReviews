@@ -195,13 +195,13 @@
                 <li>
                   <h4>이벤트</h4>
                   <ul>
-                    <li><a href="underConstruction.jsp">공사중</a></li>
+                    <li><a href="underConstruction_kor.jsp">공사중</a></li>
                   </ul>
                 </li>
                 <li>
                   <h4>오타쿠 뉴스</h4>
                   <ul>
-                    <li><a href="news.jsp">공지사항</a></li>
+                    <li><a href="news_kor.jsp">공지사항</a></li>
                   </ul>
                 </li>
               </ul>
@@ -234,13 +234,13 @@
                 <li>
                   <h4>이벤트</h4>
                   <ul>
-                    <li><a href="underConstruction.jsp">공사중</a></li>
+                    <li><a href="underConstruction_kor.jsp">공사중</a></li>
                   </ul>
                 </li>
                 <li>
                   <h4>오타쿠 뉴스</h4>
                   <ul>
-                    <li><a href="news.jsp">공지사항</a></li>
+                    <li><a href="news_kor.jsp">공지사항</a></li>
                   </ul>
                 </li>
               </ul>
@@ -274,13 +274,13 @@
                 <li>
                   <h4>이벤트</h4>
                   <ul>
-                    <li><a href="underConstruction.jsp">공사중</a></li>
+                    <li><a href="underConstruction_kor.jsp">공사중</a></li>
                   </ul>
                 </li>
                 <li>
                   <h4>오타쿠 뉴스</h4>
                   <ul>
-                    <li><a href="news.jsp">공지사항</a></li>
+                    <li><a href="news_kor.jsp">공지사항</a></li>
                   </ul>
                 </li>
               </ul>
@@ -313,13 +313,13 @@
                 <li>
                   <h4>이벤트</h4>
                   <ul>
-                    <li><a href="underConstruction.jsp">공사중</a></li>
+                    <li><a href="underConstruction_kor.jsp">공사중</a></li>
                   </ul>
                 </li>
                 <li>
                   <h4>오타쿠 뉴스</h4>
                   <ul>
-                    <li><a href="news.jsp">공지사항</a></li>
+                    <li><a href="news_kor.jsp">공지사항</a></li>
                   </ul>
                 </li>
               </ul>
