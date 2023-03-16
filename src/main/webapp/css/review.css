@@ -7,6 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   color: #444;
+<<<<<<< HEAD
   background: rgb(10, 19, 66);
   color: #fee600;
 }
@@ -114,3 +115,73 @@ caption{
 	font-size:21px;
 	text-align:center;
 } */
+=======
+  background: #eee;
+}
+
+
+.top_table{
+	float:left;
+	width:1100px;
+	margin-top:50px;
+	
+}
+
+h2 {
+  letter-spacing: -1px;
+  color: #34495E;
+  font-weight:bold;
+  margin: 0 auto; 
+}
+button{
+	float:right;
+	margin-bottom: 10px;
+	margin-right: 20px;
+}
+
+button:hover{
+	transform:tranlateX(10px);
+	background-color:darkgray;
+	color:yellow;
+}
+
+.table {
+  background: lightgray;
+  color: #fff;
+  border-radius: .3em;
+  overflow: hidden;
+
+}
+
+ tr {
+    border-color: lighten(#34495E, 10%);
+  }
+ 
+ th, td {
+    margin: .5em 1em;
+    @media (min-width: $breakpoint-alpha) { 
+      padding: 1em !important; 
+    }
+ }
+  
+th, td:before {
+    color: #8080c0;
+  }
+
+ .title{
+  font-size: 25px;
+ }
+ .content{
+	font-size:21px;
+	text-align:center;
+ }
+ 
+ button{
+ 	width: 60px;
+ 	height:30px;
+ 	border-radius: 3em;
+ 	float: right;
+
+ }
+
+>>>>>>> yoni

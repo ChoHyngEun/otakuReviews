@@ -42,11 +42,10 @@
             <button type="button" onclick="location.href='reviewRegistration.jsp'">add</button>
         </div>    
             <!-- th 자동 출력 -->
-            <tr>
-			    <%-- 컬럼명 출력 --%>
-			    <c:forEach var="i" begin="1" end="${metaData.columnCount}">
-			        <th><c:out value="${metaData.getColumnLabel(i)}" /></th>
-			    </c:forEach>
+            <tr class="title">
+				<c:forEach var="columnName" items="${resultSet.columnNames}" >
+					<th width="100"><c:out value="${columnName}" /></th>
+				</c:forEach>
 			</tr>
 		
 		<!-- td row 자동 선언 -->

@@ -10,6 +10,35 @@
 <meta charset="UTF-8">
 <title>Feeling Salty?</title>
 <link rel="stylesheet" href="css/reviewregistration.css">
+<script>
+function updateProduct_name() {
+  var selectBox = document.querySelector(".product_name");
+  var selectedOption = selectBox.options[selectBox.selectedIndex].value;
+  if (selectedOption === "Americano") {
+    document.querySelector("#selected_product").value = "Americano";
+  }else if (selectedOption === "Latte") {
+    document.querySelector("#selected_product").value = "Latte";
+  } else if (selectedOption === "Coldbrew") {
+	    document.querySelector("#selected_product").value = "Coldbrew";
+  }else {
+    document.querySelector("#selected_product").value = "";
+  }
+}
+
+function updateProduct_brand() {
+	  var selectBox = document.querySelector(".product_brand");
+	  var selectedOption = selectBox.options[selectBox.selectedIndex].value;
+	  if (selectedOption === "Starbucks") {
+	    document.querySelector("#selected_brand").value = "Starbucks";
+	  }else if (selectedOption === "Mega") {
+	    document.querySelector("#selected_brand").value = "Mega";
+	  } else if (selectedOption === "Paik") {
+		    document.querySelector("#selected_brand").value = "Paik";
+	  }else {
+	    document.querySelector("#selected_brand").value = "";
+	  }
+	}
+</script>
 </head>
 <body>
 
@@ -44,12 +73,28 @@
 					<!-- <label>Your ID</label> -->
 				</div>
 				<div class="user-box">
-					<input type="text" placeholder="Americano, Latte, Coldbrew" name="product_name">
-					<label>Product Name</label>
+				  <select name="product_name" class="product_name" onchange="updateProduct_name()">
+				  	<option value="0">-- select --</option>
+					<option value="Americano">Americano</option>
+					<option value="Latte">Latte</option>
+					<option value="Coldbrew">Coldbrew</option>
+				  </select>
+					<input type="text" placeholder="Americano, Latte, Coldbrew" name="product_name" id="selected_product" >
+				  <label>Product Name</label>
+
+					
 				</div>
+				
 				<div class="user-box">				
-					<input type="text" placeholder="Starbucks, Mega, Paik" name="product_brand">
+				  <select class="product_brand" onchange="updateProduct_brand()">
+				    <option value="0">-- select --</option>
+					<option value="Starbucks">Starbucks</option>
+					<option value="Mega">Mega</option>
+					<option value="Paik">Paik</option>
+				  </select>
+					<input type="text" placeholder="Starbucks, Mega, Paik" name="product_brand"  id="selected_brand" >
 					<label>Product Brand</label>
+					
 				</div>
 				<div class="user-box">
 					<input type="text" placeholder="2.5" name="product_price">

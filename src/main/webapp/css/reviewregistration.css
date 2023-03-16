@@ -40,7 +40,7 @@ html {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
-    color: #fee600;
+    color:  #fee600;
     margin-bottom: 30px;
     border: none;
     border-bottom: 1px solid #fee600;
@@ -61,12 +61,47 @@ html {
   }
   
   .login-box .user-box input:focus ~ label,
-  .login-box .user-box input:valid ~ label {
+  .login-box .user-box input:valid ~ label{
     top: -20px;
     left: 0;
-    color: #03e9f4;
+/*     color: #03e9f4; */
     font-size: 12px;
   }
+  /* select 태그 스타일링 */
+select {
+  display: block;
+  width: 10px;
+  height:10px;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  text-align:left;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: yellow;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  margin-right: 300px;
+  cursor:pointer;
+}
+
+/* option 태그 스타일링 */
+option {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: black;
+  background-color: gray;
+}
+
+/* 선택된 option 태그 스타일링 */
+select option:checked {
+  background-color: pink;
+  color: #fff;
+  cursor:pointer;
+}
   
   .login-box form a {
     position: relative;
