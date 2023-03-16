@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+
+
+body {
+	background-color: rgb(10, 19, 66);
+	color: #fee600;
+}
+
+a {
+	color: white;
+	font-weight: bold;
+}
+
+#wrap{
+	margin:0 auto;
+	width:1400px;
+	height: 800px;
+}
+
+#title{
+	font-size:50px;
+	text-align: center;
+	padding-top:50px;
+}
+
+#top{
+	padding-top:100px;
+	width: 500px;
+	height: 620px;
+	position: relative;
+	float: left;
+}
+#transform {
+	width: 460px;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	left: 30px;
+}
+#contents {
+	float: left;
+	margin: auto 0;
+	margin-left: 150px;
+	width: 600px;
+	height: 300px;
+	margin-top: 150px;
+}
+
+.pro_img1{
+	float: left;
+	width:700px;
+	height:500px;
+	position:relative;
+	margin: 50px auto;
+	overflow: hidden;
+}
+
+.slide1{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 500px;
+	transition: left 0.5s ease-out;
+}
+
+.slide1 li:first-child{
+	margin-left:100px;
+}
+
+.slide1 li:not(:last-child){
+	float: left;
+	margin-right:100px;
+}
+
+.slide1 li{
+	float:left;
+}
+
+.controller1 span{
+	position:absolute;
+	background-color:tranparent;
+	color: black;
+	text-align: center;
+	border-radius: 50%;
+	padding: 10px 20px;
+	top: 50%;
+	font-size: 1.3em;
+	cursor:pointer;
+}
+
+.controller1 span:hover{
+	background-color:rgba(128,128,128,0.11);
+}
+
+.prev1{
+	left:10px;
+}
+
+.prev1:hover{
+	transform:tranlateX(-10px);
+}
+
+.next1{
+	right:210px;
+}
+
+.next1:hover{
+	transform:tranlateX(10px);
+}
+
+
+.pro_info{
+	font-size : 25px;
+	line-height: 30px;
+	margin-top:150px;
+	margin-bottom: 50px;
+	float: left;
+	width: 400px;
+	height: 200px;
+}
+
+
+
+#middle{
+	padding-top:100px;
+	width:1400px;
+	height:500px;
+	position:relative;
+	margin: 50px auto;
+	overflow: hidden;
+	clear:both;
+}
+.slide2{
+	position: absolute;
+	left: 0;
+	float: left;
+	top: 0;
+	width: 1400px;
+	height:500px;
+	overflow:hidden;
+}
+
+.slide2 li:first-child{
+	margin-left:100px;
+}
+
+.slide2 li:not(:last-child){
+	float: left;
+	margin-right:100px;
+}
+
+.slide2 li{
+	float:left;
+}
+.controller2 span{
+	position:absolute;
+	background-color:transparent;
+	color:white;
+	text-align: center;
+	border-radius: 50%;
+	padding: 10px 20px;
+	top: 50%;
+	font-size: 1.3em;
+	cursor:pointer;
+}
+
+.controller2 span:hover{
+	background-color:rgba(128,128,128,0.11);
+}
+
+.prev2{
+	left:10px;
+}
+
+.prev2:hover{
+	transform:tranlateX(-10px);
+}
+
+.next2{
+	right:210px;
+}
+
+.next2:hover{
+	transform:tranlateX(10px);
+}
+
+#bottom{
+	font-size:30px;
+	margin:0 auto;
+}
+
+#transformation {
+	width: 140px;
+	height: 45px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	font-weight: 1500;
+	color: rgb(10, 19, 66);
+	background-color: #fee600;
+	border: none;
+	border-radius: 45px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	}
+	
+#transformation:hover {
+background-color: #ff5722;
+	box-shadow: 0px 15px 20px rgba(119, 29, 0, 0.73);
+color: #fff;
+transform: translateY(-7px);
+}
+	  
+	  
+
+#transformation2 {
+	width: 140px;
+	height: 45px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	font-weight: 1500;
+	color: rgb(10, 19, 66);
+	background-color: #fee600;
+	border: none;
+	border-radius: 45px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	}
+	
+#transformation2:hover {
+background-color: #ff5722;
+	box-shadow: 0px 15px 20px rgba(119, 29, 0, 0.73);
+color: #fff;
+transform: translateY(-7px);
+}
+
+#transformation3 {
+	width: 140px;
+	height: 45px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	font-weight: 1500;
+	color: rgb(10, 19, 66);
+	background-color: #fee600;
+	border: none;
+	border-radius: 45px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	}
+	
+#transformation3:hover {
+background-color: #ff5722;
+	box-shadow: 0px 15px 20px rgba(119, 29, 0, 0.73);
+color: #fff;
+transform: translateY(-7px);
+}
