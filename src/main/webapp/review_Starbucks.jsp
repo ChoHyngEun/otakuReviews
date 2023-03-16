@@ -11,6 +11,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="css/review.css"/>
 <meta charset="UTF-8">
 <title>Starbucks Reviews</title>
 </head>
@@ -32,12 +33,14 @@
 <div align=center>
 
 	<!-- review item list 출력 table -->
-	<table border="1" class=review_table>
+	<table border="1" class="table">
 	
-            <caption><h2>List of reviews</h2></caption>
+      	<div class="top_table">
+            <h2>List of reviews</h2>
             <button type="button" onclick="location.href='reviewRegistration.jsp'">add</button>
+        </div> 
             <!-- th 자동 출력 -->
-            <tr>
+            <tr class="title">
 				<c:forEach var="columnName" items="${resultSet.columnNames}" >
 					<th width="100"><c:out value="${columnName}" /></th>
 				</c:forEach>
@@ -47,7 +50,7 @@
         <c:forEach var="row" items="${resultSet.rowsByIndex}" >
 			
 			<!-- 각 row -->
-			<tr class=content>
+			<tr class="content">
 				<!-- 각 row의 column td 출력 -->
 				<c:forEach var="column" items="${row}" varStatus="i">
 					<td>
