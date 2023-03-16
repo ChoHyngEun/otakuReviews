@@ -79,6 +79,12 @@
   >>> 모든 리뷰 추가, 삭제 구현<br>
   >>> (미구현) 모든 유저와 리뷰의 정보 수정하기 기능 미구현<br>
   <br>
+  
+**6. 기타**
+
+  <br>
+  >>> 한/영 번역기능 추가<br>
+  
 <br>
   
 ![Alt Text](https://media.giphy.com/media/3o7TKDcovELwB2DM64/giphy.gif)<br>
