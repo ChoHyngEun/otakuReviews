@@ -11,9 +11,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="css/review.css"/>
 <meta charset="UTF-8">
-<title>Starbucks Reviews</title>
+<title>빽다방 리뷰</title>
 </head>
 <body>
 
@@ -27,20 +26,18 @@
     
     <!-- jstl:sql query 선언 -->
     <sql:query var="resultSet" dataSource="${dataSource}">
-        select * from product where product_brand = 'Starbucks';
+        select * from product where product_brand = 'Paik';
     </sql:query>
     
 <div align=center>
 
 	<!-- review item list 출력 table -->
-	<table border="1" class="table">
+	<table border="1" class=review_table>
 	
-      	<div class="top_table">
-            <h2>List of reviews</h2>
-            <button type="button" onclick="location.href='reviewRegistration.jsp'">add</button>
-        </div> 
+            <caption><h2>리뷰 리스트</h2></caption>
+            <button type="button" onclick="location.href='reviewRegistration.jsp'">리뷰등록</button>
             <!-- th 자동 출력 -->
-            <tr class="title">
+            <tr>
 				<c:forEach var="columnName" items="${resultSet.columnNames}" >
 					<th width="100"><c:out value="${columnName}" /></th>
 				</c:forEach>
@@ -50,7 +47,7 @@
         <c:forEach var="row" items="${resultSet.rowsByIndex}" >
 			
 			<!-- 각 row -->
-			<tr class="content">
+			<tr class=content>
 				<!-- 각 row의 column td 출력 -->
 				<c:forEach var="column" items="${row}" varStatus="i">
 					<td>

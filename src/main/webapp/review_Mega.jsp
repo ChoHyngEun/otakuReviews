@@ -11,6 +11,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="css/review.css"/>
 <meta charset="UTF-8">
 <title>Mega Coffee Reviews</title>
 </head>
@@ -26,28 +27,33 @@
     
     <!-- jstl:sql query 선언 -->
     <sql:query var="resultSet" dataSource="${dataSource}">
-        select * from product where product_brand = 'Mega';
+        SELECT product_id AS `ReveiwId`, product_name AS `Product`, product_brand as `Brand`, product_price as `Price`, star as `Ratings`, product_review as `Content`, username as `Author` FROM product;
     </sql:query>
     
+    <%-- ResultSetMetaData 객체 가져오기 --%>
+	<c:set var="metaData" value="${var.resultSet.metaData}" />
+	<c:set var="metaData" value="${result.metaData}" />
 <div align=center>
 
 	<!-- review item list 출력 table -->
-	<table border="1" class=review_table>
-	
-            <caption><h2>List of reviews</h2></caption>
+	<table border="1" class="table">
+		<div class="top_table">
+            <h2>List of reviews</h2>
             <button type="button" onclick="location.href='reviewRegistration.jsp'">add</button>
+        </div>    
             <!-- th 자동 출력 -->
             <tr>
-				<c:forEach var="columnName" items="${resultSet.columnNames}" >
-					<th width="100"><c:out value="${columnName}" /></th>
-				</c:forEach>
+			    <%-- 컬럼명 출력 --%>
+			    <c:forEach var="i" begin="1" end="${metaData.columnCount}">
+			        <th><c:out value="${metaData.getColumnLabel(i)}" /></th>
+			    </c:forEach>
 			</tr>
 		
 		<!-- td row 자동 선언 -->
         <c:forEach var="row" items="${resultSet.rowsByIndex}" >
 			
 			<!-- 각 row -->
-			<tr class=content>
+			<tr class="content">
 				<!-- 각 row의 column td 출력 -->
 				<c:forEach var="column" items="${row}" varStatus="i">
 					<td>
