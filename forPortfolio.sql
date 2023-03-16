@@ -1,3 +1,6 @@
+-- MySQL version 8.0.32
+-- syntax used in this code might not work with your version of MySQL
+
 -- 시간대 설정 에러가 뜰 경우 --------------------------------
 
 select @@system_time_zone; -- 내 시스템 시간 확인
