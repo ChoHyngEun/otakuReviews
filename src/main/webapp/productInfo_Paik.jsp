@@ -72,7 +72,7 @@
 <div id="middle">
 	<div class="pro_img2">
 		<li><img src="http://www.menupan.com/common/service/img_proxy.asp?src=http%3A%2F%2Fpostfiles5.naver.net%2FMjAxNjExMTNfMjk3%2FMDAxNDc5MDQ1MzQxODMw.2L3SLBhbLGz7kQXdsu87dFca__RsnSgVCxSdwkckdtgg.5TRcGX5qAiAYkjvezK_eRfqHZi7aIX25BkFuSXtlapsg.JPEG.misarang75%2Fdd.jpg%3Ftype%3Dw773" width="1200px" height="500px"></li>
-		<li><img src="./images/paik's_n.jpg" width="1200px" height="500px"></li>
+		<li><img src="./images/forpaik.jpg" width="1200px" height="500px"></li>
     <p class="controller2">
 	  	<span class="prev2">&lang;</span>
 	  	<span class="next2">&rang;</span>

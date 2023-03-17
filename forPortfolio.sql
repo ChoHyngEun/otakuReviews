@@ -14,6 +14,7 @@ delete from user;
 drop table user;
 
 create table user(
+
 	id mediumint not null auto_increment,
     first_name varchar(20) default null,
     last_name varchar(20) default null,
@@ -24,6 +25,7 @@ create table user(
     phone varchar(15) default null,
     primary key (id),
     unique key (username)
+    
     );
     
 	insert into user values(1, 'admin', 'admin', 'admin', 'Tkfkdgo450.', '833 E River Pkwy', 'admin@otakuReviews.com', '01012345678');
@@ -36,6 +38,7 @@ delete from product;
 drop table product;
 
 create table product(
+
 	product_id mediumint not null auto_increment,
     product_name varchar(30) not null,
     product_brand varchar(30) not null,
@@ -48,6 +51,7 @@ create table product(
     foreign key (username) references user (username)
     ON DELETE CASCADE
 	ON UPDATE CASCADE
+	
 );
 
 alter table product auto_increment=1;

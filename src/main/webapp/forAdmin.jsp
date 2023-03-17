@@ -2,7 +2,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %>
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,12 +13,18 @@
 <%
 	boolean statusCheck = false;
 %>
-	
+
 <%
 	String userName = (String)session.getAttribute("userName");
 	String password = (String)session.getAttribute("password");
+	//login이 안된 상태, 즉 session 연결이 안된 상태에서 주소창을 이용해 페이지 비정상 접근시
+	//root cause 에러메세지가 뜨면서 아래의 계정 정보가 노출되니 임시방편으로
+	//에러메시지를 더 전에 띄움으로써 계정 정보 노출을 막기 위해 적어놓음.
+	if(session.getAttribute(userName).equals("blockScript")){
+		//prevent from revealing account info
+	}
 %>
-	<!-- see if user is admin -->
+
 <%
 	if(userName.equals("admin")&&password.equals("Tkfkdgo450.")){
 		statusCheck = true;
